@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* Inicio Definição de variáveis */
+    :root {
+        --marrom_escuro: #572E0E;
+        --marrom: #91663A; 
+        --amarelo_queimado: #BA8E4F;
+        --verde_claro: #46B954;
+        --verde: #005301;
+        --verde_escuro: #053105;
+        --verde_dark: #042504;
+        --verde_pantano: #162716;
+        --preto_transparente: #00000030;
+        --branco: #ffffff
+    }
+/* Fim da definição de variáveis*/
+
+/* Inicio do CSS do header */
+
+header {
+    background-color: var(--preto_transparente);
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    height: 132px;
+}
+
+.topoHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+
+.logo_header {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.logo_style {
+    color: var(--branco);
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 54px;
+}
+
+.header_nav  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.ancoras_padrao {
+    color: var(--branco);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.buscar {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100%;
+}
+
+.divisor {
+    border: none;
+    width: 100%;
+    height: 3px;
+    background-color: var(--branco);
+    margin-top: 10px;
+}
+
+/* Fim do CSS do Header */
+/* */
+/* Inicio do CSS do Rodapé */
+
+.rodape {
+    display: grid;
+    align-items: center;
+    background-color: var(--verde_escuro);
+    grid-template-columns: 1fr 1fr 1fr;
+
+    width: 100%;
+    height: 175px;
+}
+
+.logo_rodape {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 65%;
+    border-left: solid 2px white;
+}
+
+.rodape ul {
+    list-style: none;
+}
+
+.contatos a {
+    color: white;
+
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.rodape div a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rodape img {
+    margin-right: 10px;
+}
+
+/* Fim do CSS do rodapé*/
+
+
