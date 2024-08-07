@@ -183,9 +183,14 @@ header nav ul {
     width: 200px;
     height: 50px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     font-family: 'Raleway';
     font-weight: 600;
     font-size: 27px;
+    text-decoration: none;
     color: var(--branco);
 }
 
@@ -235,4 +240,112 @@ header nav ul {
 }
 
 /* Fim do CSS dos destaques*/
+
+/* Inicio do CSS do explore*/
+
+.explore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--amarelo_queimado);
+    height: 255px;
+}
+
+.explore p {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 80px;
+    color: var(--branco);
+}
+
+/* Inicio do CSS do explore*/
+
+/* Inicio do CSS do conteúdos*/
+
+.conteudos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 535px;
+    background-color: var(--branco);
+
+}
+
+.conteudos .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 870px;
+}
+
+.texto h2 {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 80px;
+    color: var(--verde_pantano);
+}
+
+.texto p {
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--verde_pantano);
+}
+
+.acessar {
+    background-color: var(--verde_pantano);
+    border-radius: 15px;
+    width: 150px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--branco);
+    
+}
+
+.conteudos .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fim do CSS do conteúdos*/
+
+/* Inicio do CSS da seção do quiz*/
+
+.quiz {
+    background-image: url(./Imgs_home/Background_quiz_section.png);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 535px;
+
+    border: 1px solid red
+}
+
+.quiz h2, .quiz h3, .quiz p {
+    border: 1px solid red;
+    font-family: 'Raleway';
+    text-align: center;
+    color: var(--branco);
+}
+
+.quiz a {
+
+}
 
