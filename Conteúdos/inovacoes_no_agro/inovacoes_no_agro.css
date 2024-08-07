@@ -3,6 +3,8 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 /* Inicio Definição de variáveis */
@@ -235,3 +237,22 @@ header nav ul {
 }
 
 /* Fim do CSS dos destaques*/
+
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 55px; 
+}
+
+.p1 p{
+   text-align: center;
+   width: 888px;
+   height: 175px;
+}
+
+.p2 p {
+    text-align: center;
+   width: 557px;
+   height: 495px;
+}
