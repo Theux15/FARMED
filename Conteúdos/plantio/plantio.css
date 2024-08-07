@@ -164,5 +164,17 @@ h1 {
     font-family: 'Open Sans', sans-serif;
   }
 
-
-
+.texto-com-imagem {
+    overflow: hidden;
+  }
+  
+  .imagem-container {
+    float: left; 
+    margin-right: 20px; /* Adiciona margem à direita da imagem */
+  }
+  
+  .imagem-container img {
+    max-width: 200px; /* Define a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  

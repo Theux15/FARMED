@@ -152,3 +152,21 @@ header nav ul {
 /* Fim do CSS do rodapé*/
 
 
+h1 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 55px; 
+}
+
+.p1 p{
+   text-align: center;
+   width: 326px;
+   height: 450px;
+}
+
+.p2 p {
+   text-align: center;
+   width: 857px;
+   height: 267px;
+}
+
