@@ -334,18 +334,30 @@ header nav ul {
     justify-content: center;
 
     height: 535px;
-
-    border: 1px solid red
 }
 
 .quiz h2, .quiz h3, .quiz p {
-    border: 1px solid red;
+
     font-family: 'Raleway';
     text-align: center;
     color: var(--branco);
 }
 
-.quiz a {
-
+.quiz h3 {
+    font-weight: 600;
+    font-size: 36px;
 }
+
+.quiz h2 {
+    font-weight: 800;
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.quiz p {
+    font-weight: 600;
+    font-size: 27px;
+}
+
+
 

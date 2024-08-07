@@ -166,58 +166,66 @@ h1 {
 
 /* Estilo para o contêiner principal */
 
+/* Estilo para o contêiner principal */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  
-  .texto-e-imagem {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-  }
-  
-  .imagem-container {
-    margin-right: 20px;
-  }
-  
-  .imagem1-container img {
-    max-width: 250px;
-    height: auto;
-  }
-  
-  .imagem2 {
-    max-width: 870px;
-    height: auto;
-  }
-  
+  max-width: 1200px; /* Define a largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+  padding: 20px; /* Adiciona espaçamento interno ao contêiner */
+}
 
-  .imagem-centralizada {
-    display: flex; 
-    justify-content: center; 
-    margin-top: 20px;
-  }
-  
-  
-  .texto-e-imagem-centralizado {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 870px;
-    margin: 0 auto;
-  }
-  
-  .texto-com-imagem {
-    max-width: 100%; 
-    margin: 0; 
-    font-family: 'Open Sans', sans-serif; 
-  }
-  
+/* Estilo para o contêiner de texto e imagem lado a lado */
+.texto-e-imagem {
+  display: flex;
+  align-items: center; /* Alinha verticalmente a imagem e o texto */
+  margin-bottom: 20px; /* Espaço abaixo do contêiner */
+}
 
-  h1, h2 {
-    font-family: 'Raleway', sans-serif; 
-    text-align: center;
-  }
-  
+.imagem-container {
+  margin-right: 20px; /* Espaço à direita da imagem */
+}
+
+.imagem1-container img {
+  max-width: 250px; /* Define a largura máxima para a imagem 1 */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.texto-imagem1 {
+  max-width: 600px; /* Ajuste para alinhar com a largura da imagem 2 */
+  font-family: 'Open Sans', sans-serif; 
+  margin: 0; 
+  line-height: 1.6; 
+
+
+.texto-e-imagem-centralizado {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+
+.texto-com-imagem {
+  max-width: 100%; 
+  margin: 0; 
+  font-family: 'Open Sans', sans-serif; 
+  text-align: center; 
+}
+
+
+.imagem2 {
+  max-width: 600px; 
+  height: auto; 
+}
+
+
+.imagem-centralizada {
+  display: flex; 
+  justify-content: center; 
+  margin-top: 20px; 
+}
+
+
+h1, h2 {
+  font-family: 'Raleway', sans-serif; 
+  text-align: center; 
+}
