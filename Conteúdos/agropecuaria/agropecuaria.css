@@ -191,10 +191,12 @@ h1 {
 
 .imgtex {
     flex-direction: row; 
+    margin-bottom: auto; 
 }
 
 .imgtex2 {
     flex-direction: row-reverse; 
+    margin-top: auto; 
 }
 
 .imgtex img, .imgtex2 img {
@@ -215,11 +217,3 @@ h1 {
     line-height: 1.6;
     margin-top: 20px;
 }
-
-.imgtex2 img {
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
-    height: auto;
-}
-
