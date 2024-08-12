@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
     font-family: "Raleway", sans-serif;
+
 }
 
 /* Inicio Definição de variáveis */
@@ -158,19 +159,67 @@ h1 {
 }
 
 .p1 p {
-   text-align: center;
-   width: 436px;
-   height: 378px;
+    text-align: center;
+    width: 854px;
+    height: 335px;
+ }
+
+ .p2 p {
+    text-align: center;
+    width: 379px;
+    height: 331px;
+ }
+
+
+
+
+ .conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    padding: 20px;
 }
 
-.p2 p {
-    text-align: center;
-    width: 858px;
-    height: 443px;
+.imgtex, .imgtex2 {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    width: 100%; 
+    max-width: 1200px; 
+    box-sizing: border-box; 
 }
 
-.p3 p {
-    text-align: center;
-    width: 388px;
-    height: 244px;
+.imgtex {
+    flex-direction: row; 
 }
+
+.imgtex2 {
+    flex-direction: row-reverse; 
+}
+
+.imgtex img, .imgtex2 img {
+    width: 40%; 
+    height: auto;
+}
+
+.imgtex p, .imgtex2 p {
+    flex: 1;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.texto-apenas p {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.imgtex2 img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+
