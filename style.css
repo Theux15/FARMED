@@ -44,6 +44,7 @@ header {
 }
 
 .logo_header {
+    width: fit-content;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -154,7 +155,7 @@ header nav ul {
 .cta {
     background: url(./Imgs_home/background.png);
     background-size: cover;
-    height: 1026px;
+    height: 100vh;
 
     display: flex;
     flex-direction: column;

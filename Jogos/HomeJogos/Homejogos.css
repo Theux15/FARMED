@@ -164,8 +164,15 @@ header nav ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-    font-size: 140px;
+    color: var(--branco);
+    font-size: 80px;
     font-weight: bold;
 }
+
+h2{
+    font-family:'Raleway';
+    font-size: 36px;
+    text-align: center;
+}
+
 
