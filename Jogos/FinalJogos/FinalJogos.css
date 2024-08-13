@@ -3,8 +3,6 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-    font-family: "Raleway", sans-serif;
 }
 
 /* Inicio Definição de variáveis */
@@ -76,7 +74,7 @@ header nav ul {
     color: var(--branco);
     text-transform: uppercase;
     text-decoration: none;
-    font-family: 'Raleway';
+    font-family:'Raleway';
     font-weight: 600;
     font-size: 20px;
 }
@@ -96,80 +94,31 @@ header nav ul {
     margin-top: 10px;
 }
 
-/* Fim do CSS do Header */
-/* */
-/* Inicio do CSS do Rodapé */
-
-.rodape {
-    display: grid;
-    align-items: center;
-    background-color: var(--verde_escuro);
-    grid-template-columns: 1fr 1fr 1fr;
-
-    width: 100%;
-    height: 175px;
+.imagem-de-fundo{
+    width: 2000px;
 }
 
-.logo_rodape {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.rodape div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 65%;
-    border-left: solid 2px white;
-}
-
-.rodape ul {
-    list-style: none;
-}
-
-.contatos a {
+.titulo{
+    font-family:'Raleway';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-
-    text-decoration: none;
-    font-family: 'Raleway';
-    font-weight: 600;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.rodape div a {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+.caixa-de-pontuacao{
+    width: 156px;
+    height: 144px;
+    border: 1px solid #46B954;
+    border-radius: 25px;
 }
 
-.rodape img {
-    margin-right: 10px;
-}
-
-/* Fim do CSS do rodapé*/
-
-
-h1 {
+.pontuacao{
+    width: 133px;
+    height: 126px;
     text-align: center;
-    font-weight: 800;
-    font-size: 55px; 
-}
 
-.p1 p{
-   text-align: center;
-   width: 326px;
-   height: 450px;
-}
-
-.p2 p {
-   text-align: center;
-   width: 857px;
-   height: 267px;
-}
-
-.img1 img {
-    width: 528px;
 }

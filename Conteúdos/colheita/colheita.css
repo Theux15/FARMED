@@ -197,16 +197,16 @@ h1 {
 }
 
 .imagem1 {
-    width: 465px; 
-    height: 685px;
+    width: 565px; 
+    height: 475px;
 }
 
 .texto-imagem1 {
-    width: 465px; 
+    width: 306px; 
     font-family: 'Open Sans', sans-serif;
-    text-align: left; 
     line-height: 1.6;
     margin: 0;
+    text-align: justify;
 }
 
 
@@ -223,14 +223,15 @@ h1 {
 }
 
 .imagem2 {
-    width: 886px; 
-    height: auto; 
+    width: 891px; 
+    height: 369px; 
 }
 
 .imagem-centralizada {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    
 }
 
 h1, h2 {

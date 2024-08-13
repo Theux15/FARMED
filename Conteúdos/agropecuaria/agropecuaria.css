@@ -152,30 +152,26 @@ header nav ul {
 
 /* Fim do CSS do rodapé*/
 
+
+
 h1 {
     text-align: center;
     font-weight: 800;
     font-size: 55px; 
 }
 
-.p1 p {
+.p1 p, .p2 p {
     text-align: center;
-    width: 854px;
-    height: 335px;
- }
+    width: 100%;
+    max-width: 854px;
+    height: auto;
+    margin: 0 auto;
+}
 
- .p2 p {
-    text-align: center;
-    width: 379px;
-    height: 331px;
- }
-
-
-
-
- .conteudo {
+.conteudo {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 30px; 
     padding: 20px;
 }
@@ -183,25 +179,22 @@ h1 {
 .imgtex, .imgtex2 {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px; 
     width: 100%; 
-    max-width: 1200px; 
+    max-width: 854px; 
     box-sizing: border-box; 
+    margin: 0 auto;
 }
 
-.imgtex {
-    flex-direction: row; 
-    margin-bottom: auto; 
+.imgtex img {
+    width: 404px;  
+    height: 369px; 
 }
 
-.imgtex2 {
-    flex-direction: row-reverse; 
-    margin-top: auto; 
-}
-
-.imgtex img, .imgtex2 img {
-    width: 40%; 
-    height: auto;
+.imgtex2 img {
+    width: 458px;  
+    height: 253px; 
 }
 
 .imgtex p, .imgtex2 p {
@@ -209,6 +202,7 @@ h1 {
     text-align: justify;
     font-size: 18px;
     line-height: 1.6;
+    font-family: "Open Sans", sans-serif;
 }
 
 .texto-apenas p {
@@ -216,4 +210,8 @@ h1 {
     font-size: 18px;
     line-height: 1.6;
     margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    max-width: 854px;
+    margin: 0 auto;
 }

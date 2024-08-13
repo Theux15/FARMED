@@ -151,6 +151,7 @@ header nav ul {
 
 /* Fim do CSS do rodapé*/
 
+
 h1 {
     text-align: center;
     font-weight: 800;
@@ -159,419 +160,50 @@ h1 {
 
 .p1 p {
    text-align: center;
-   width: 436px;
-   height: 378px;
+   width: 486px;
+   height: 331px;
 }
 
 .p2 p {
     text-align: center;
-    width: 858px;
-    height: 443px;
+    width: 482px;
+    height: 308px;
 }
 
 .p3 p {
     text-align: center;
-    width: 388px;
-    height: 244px;
+    width: 476px;
+    height: 338px;
 }
 
 
 
-levando em conta esse html
-
-
-ChatGPT said:
-ChatGPT
-Baseando-se no HTML e CSS que você forneceu, vou ajustar o layout para que fique o mais parecido possível com o seu print. Aqui está a estrutura ajustada:
-
-HTML Ajustado
-html
-Copiar código
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="agropecuaria.css">
-    <title>FARMED</title>
-</head>
-<body>
-    <header>
-        <div class="topoHeader">
-            <a href="index.html" class="logo_header"><h1 class="logo_style">FARMED</h1></a>
-            <div class="header_nav">
-                <nav>
-                    <ul>
-                        <li><a class="ancoras_padrao" href="../../Conteúdos/Carrossel/Carrossel.html">Conteúdos</a></li>
-                        <li><a class="ancoras_padrao" href="../../Jogos/HomeJogos/Homejogos.html">Jogos</a></li>
-                        <li><a class="ancoras_padrao" href="../../Sobre/sobre.html">Sobre</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="buscar">
-                <img src="../../Icones/Pesquisa.png" alt="Lupa de pesquisa">
-            </div>
-        </div>
-        <hr class="divisor">
-    </header>
-
-    <main>
-        <div class="imagem-fundo">
-            <img src="../../imagens/agropecuaria/agropecuaria_fundo.jpg" alt="img_fundo_agropecuaria">
-        </div>
-
-        <div class="conteudo-central">
-            <div class="seta-esquerda">
-                <img src="../../imagens/setas/seta_esquerda.png" alt="seta_esquerda">
-            </div>
-
-            <h1 class="titulo-principal">Agropécuaria</h1>
-
-            <div class="seta-direita">
-                <img src="../../imagens/setas/seta_direita.png" alt="seta_direita">
-            </div>
-        </div>
-
-        <div class="conteudo">
-            <img class="imagem-conteudo" src="../../imagens/agropecuaria/img1.png" alt="img1">
-            <p class="p1">Além de alimentar as populações, a agropecuária desempenha um papel crucial no desenvolvimento econômico, especialmente em países com economias predominantemente agrícolas. Milhões de pessoas em todo o mundo estão empregadas na agricultura e na pecuária, e esses setores contribuem significativamente para o Produto Interno Bruto (PIB) de muitas nações. No entanto, o setor enfrenta uma série de desafios, incluindo questões ambientais, como desmatamento, esgotamento de recursos naturais e mudanças climáticas, bem como preocupações relacionadas à segurança alimentar, como acesso desigual aos alimentos e má nutrição.</p>
-            
-            <p class="p2">Além de alimentar as populações, a agropecuária desempenha um papel crucial no desenvolvimento econômico, especialmente em países com economias predominantemente agrícolas. Milhões de pessoas em todo o mundo estão empregadas na agricultura e na pecuária, e esses setores contribuem significativamente para o Produto Interno Bruto (PIB) de muitas nações. A agropecuária não apenas fornece empregos diretos nas fazendas, mas também sustenta uma cadeia de suprimentos abrangente, incluindo transporte, processamento de alimentos, distribuição e varejo. Portanto, seu impacto na economia é multifacetado e crucial para o crescimento e a estabilidade econômica. No entanto, apesar de sua importância, a agropecuária enfrenta uma série de desafios significativos. Entre eles estão questões ambientais, como desmatamento, esgotamento de recursos naturais e mudanças climáticas, que ameaçam a sustentabilidade do setor a longo prazo. O aumento da demanda por alimentos devido ao crescimento populacional também coloca pressão adicional sobre os sistemas agrícolas existentes, levando à intensificação e à degradação do solo.</p>
-            
-            <p class="p3">Em última análise, a agropecuária desempenha um papel vital na segurança alimentar global, no desenvolvimento econômico e na sustentabilidade ambiental. Enfrentar os desafios futuros exigirá uma abordagem holística que incorpore práticas agrícolas sustentáveis, inovação tecnológica e colaboração entre governos, organizações internacionais, setor privado e sociedade civil.</p>
-            
-            <img class="imagem-conteudo" src="../../imagens/agropecuaria/img2.png" alt="img2">
-        </div>
-    </main>
-
-    <footer class="rodape">
-        <a href="index.html" class="logo_rodape"><h1 class="logo_style">FARMED</h1></a>
-        <div>    
-            <ul>
-                <li><a class="ancoras_padrao" href="../../Sobre/sobre.html"><img src="../../Icones/Grupo.png" alt="Icone de grupo">Sobre nós</a></li>
-                <li><a class="ancoras_padrao" href="https://drive.google.com/drive/folders/1SGdlgOfWJhNQR6pQKVsXfG_5JzXpSQD_"><img src="../../Icones/Documento.png" alt="Icone de documento">Documentos</a></li>
-            </ul>
-        </div>
-        <div class="contatos">
-            <ul>
-                <li><a href="tel:+55(11)98954-2257"><img src="../../Icones/Telefone.png" alt="Icone de telefone">(11) 98954-2349</a></li>
-                <li><a href="mailto:farmedcontato@gmail.com"><img src="../../Icones/Email.png" alt="Icone de Email">farmedcontato@gmail.com</a></li>
-            </ul>
-        </div>
-    </footer>
-</body>
-</html>
-CSS Ajustado
-css
-Copiar código
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-    font-family: "Raleway", sans-serif;
-}
-
-:root {
-    --marrom_escuro: #572E0E;
-    --marrom: #91663A; 
-    --amarelo_queimado: #BA8E4F;
-    --verde_claro: #46B954;
-    --verde: #005301;
-    --verde_escuro: #053105;
-    --verde_dark: #042504;
-    --verde_pantano: #162716;
-    --preto_transparente: #00000030;
-    --branco: #ffffff;
-}
-
-/* CSS do header */
-header {
-    background-color: var(--preto_transparente);
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    padding: 0px 20px;
-    height: 132px;
-    width: 100%;
-    top: 0%;
-}
-
-.topoHeader {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 100px;
-    padding-left: 10px;
-    padding-top: 10px;
-}
-
-.logo_header {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-
-.logo_style {
-    color: var(--branco);
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 54px;
-}
-
-.header_nav  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header nav ul {
-    display: flex;
-    gap: 50px;
-    list-style: none;
-}
-
-.ancoras_padrao {
-    color: var(--branco);
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.buscar {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    height: 100%;
-}
-
-.divisor {
-    border: none;
-    width: 100%;
-    height: 3px;
-    background-color: var(--branco);
-    margin-top: 10px;
-}
-
-/* CSS do conteúdo principal */
-main {
-    position: relative;
-    margin-top: 132px;
-}
-
-.imagem-fundo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.imagem-fundo img {
-    width: 100%;
-    height: auto;
-}
-
-.conteudo-central {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30px 0;
-}
-
-.seta-esquerda, .seta-direita {
-    width: 50px;
-}
-
-.titulo-principal {
-    text-align: center;
-    color: var(--branco);
-    font-size: 54px;
-    font-weight: 800;
-}
 
 .conteudo {
+    max-width: 800px;
     margin: 0 auto;
-    max-width: 1400px;
-    padding: 20px;
-    background-color: var(--branco);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    text-align: justify;
 }
 
-.imagem-conteudo {
-    display: block;
+.conteudo p {
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.conteudo img {
     width: 100%;
     height: auto;
-    margin: 20px 0;
+    display: block;
+    margin: 10px 0;
 }
 
-.p1, .p2, .p3 {
-    color: var(--verde_dark);
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+.p1 {
+    text-indent: 30px;
+    margin-top: 20px;
 }
 
-/* CSS do rodapé */
-footer {
-    background-color: var(--verde_pantano);
-    color: var(--branco);
-    padding: 40px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    margin-top: 40px;
+.p2 {
+    text-indent: 30px;
 }
-
-.logo_rodape {
-    text-decoration: none;
-}
-
-footer ul {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-}
-
-footer li {
-    display: flex;
-    align-items: center;
-}
-
-footer img {
-    margin-right: 10px;
-}
-
-.contatos ul {
-    gap: 20px;
-}
-Notas sobre o Ajuste:
-Imagem de Fundo: O CSS foi ajustado para que a imagem de fundo ocupe a largura total da tela.
-Fonte e Cor dos Textos: A cor e o tamanho das fontes foram ajustados conforme necessário.
-Estrutura do Layout: A estrutura foi mantida fiel ao seu exemplo, garantindo que todos os elementos estejam alinhados e organizados de acordo com o layout esperado.
-Este ajuste deve proporcionar um layout muito próximo ao que você deseja, com um design responsivo e visualmente consistente. Teste e ajuste conforme necessário para o seu projeto.
-
-You said:
-o header esta defeituoso arrume
-ChatGPT said:
-ChatGPT
-Entendido! Vou ajustar o CSS do header para garantir que ele fique corretamente alinhado e funcionando conforme esperado. Vou também revisar o layout geral para garantir que tudo esteja funcionando corretamente.
-
-CSS Ajustado para o Header
-css
-Copiar código
-/* Reset básico */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-}
-
-/* Variáveis de cor */
-:root {
-    --marrom_escuro: #572E0E;
-    --marrom: #91663A;
-    --amarelo_queimado: #BA8E4F;
-    --verde_claro: #46B954;
-    --verde: #005301;
-    --verde_escuro: #053105;
-    --verde_dark: #042504;
-    --verde_pantano: #162716;
-    --preto_transparente: #00000030;
-    --branco: #ffffff;
-}
-
-/* Estilo do Header */
-header {
-    background-color: var(--preto_transparente);
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-.topoHeader {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-}
-
-.logo_header {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-.logo_style {
-    color: var(--branco);
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 54px;
-}
-
-.header_nav {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.header_nav ul {
-    display: flex;
-    gap: 50px;
-    list-style: none;
-}
-
-.ancoras_padrao {
-    color: var(--branco);
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.buscar {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.buscar img {
-    width: 24px;
-    height: 24px;
-}
-
-.divisor {
-    border: none;
-    width: 100%;
-    height: 3px;
-    background-color: var(--branco);
-    margin-top: 10px;
-}
-Ajustes Importantes:
-Posicionamento Fixo do Header: Configurei o header com position: fixed;, o que garante que ele fique fixo no topo da página mesmo ao rolar.
-Alinhamento dos Elementos: O .topoHeader foi configurado para usar flex com justify-content: space-between;, alinhando os elementos de forma adequada.
-Barra de Navegação: A navegação foi ajustada para ocupar o espaço central, garantindo que os links estejam bem posicionados.
-Altura das Imagens e Espaçamento: O ícone de busca (lupa) foi ajustado para manter proporções adequadas, garantindo uma boa visualização.
-Com esses ajustes, o header deve aparecer corretamente e estar alinhado com o design que você deseja. Se houver mais algo que precisa de ajustes, sinta-se à vontade para compartilhar!
-
-
-
-
-
-
-
-
