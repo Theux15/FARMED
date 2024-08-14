@@ -243,23 +243,57 @@ header nav ul {
 /* Fim do CSS dos destaques*/
 
 
+
 h1 {
     text-align: center;
     font-weight: 800;
     font-size: 5vh; 
 }
 
-.p1 p{
-   text-align: center;
-   width: 888px;
-   height: 175px;
-   font-family: "Open Sans", sans-serif;
-   
+.p1, .p2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    margin: 20px 0;
+}
+
+.p1 p, .p2 p {
+    text-align: center;
+    margin: 0;
+}
+
+.p1 p {
+    width: 888px;
+    height: 175px;
 }
 
 .p2 p {
-    text-align: center;
-   width: 557px;
-   height: 495px;
-   font-family: "Open Sans", sans-serif;
+    width: 557px;
+    height: 495px;
+}
+
+.imagem1, .imagem2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.imagem1 img, .imagem2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.setad{ 
+    right: 0;
+    position: fixed;
+    margin-right: 10px;
+}
+.setae{ 
+    left: 0; 
+    position: fixed;
+    margin-left: 10px;
+    
 }

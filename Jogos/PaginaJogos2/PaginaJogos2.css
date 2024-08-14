@@ -3,8 +3,6 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-    font-family: "Raleway", sans-serif;
 }
 
 /* Inicio Definição de variáveis */
@@ -151,104 +149,103 @@ header nav ul {
 
 /* Fim do CSS do rodapé*/
 
-h1 {
-    text-align: center;
-    font-weight: 800;
-    font-size: 5vh; 
-}
 
-.p1 p{
-   text-align: center;
-   width: 306px;
-   height: 475px;
-}
-
-.p2 p {
-    text-align: center;
-   width: 886px;
-   height: 275px;
-}
-
-/*/ 
-
-
-/*/
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.texto-e-imagem-centrado {
+.img_fundo {
     display: flex;
-    justify-content: center; 
-    margin-bottom: 20px;
-}
-
-.texto-e-imagem {
-    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
-    width: 100%;
+
+    background-image: url(../imagens/paginaJogos/pagJogos2_fundo.png);
+    background-size: cover;
+    height: 1024px;
 }
 
-.imagem-container {
-    margin-right: 20px; 
-}
-
-.imagem1 {
-    width: 565px; 
-    height: 475px;
-}
-
-.texto-imagem1 {
-    width: 306px; 
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    text-align: justify;
-}
-
-.texto2-container, .imagem-centralizada {
-    display: flex;
-    justify-content: center;
-    width: 886px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
-.texto2 {
-    font-family: 'Open Sans', sans-serif;
-    text-align: left;
-    margin: 0;
-    line-height: 1.6;
-}
-
-.imagem2 {
-    width: 891px; 
-    height: 369px; 
-}
-
-.imagem-centralizada {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-h1, h2 {
-    font-family: 'Raleway', sans-serif;
+p{
+    font-family:'Raleway';
+    font-size: 18px;
     text-align: center;
-}
-
-.setad{ 
-    right: 0;
-    position: fixed;
-    margin-right: 10px;
-}
-.setae{ 
-    left: 0; 
-    position: fixed;
-    margin-left: 10px;
+    color: var(--branco);
     
+    margin-top: 29px;
+}
+
+.pergunta h2{
+
+    font-family:'Raleway';
+    font-size: 36px;
+    text-align: center;
+    color: var(--branco);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pergunta{
+    height: 347px;
+    width: 967px;
+    border-radius: 25px;
+    background-color: var(--verde_escuro);   
+
+    /*position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;*/
+
+}
+
+.seta_esquerda{
+
+}
+
+.qts1 button{
+    font-family:'Raleway';
+    font-size: 27px;
+    text-align: center;
+    color: var(--branco);
+
+
+    height: 62px;
+    width: 429px;
+    border-radius: 50px;
+    background-color: var(--verde_escuro);
+    
+}
+
+.qts2 button{
+    font-family:'Raleway';
+    font-size: 27px;
+    text-align: center;
+
+    height: 62px;
+    width: 429px;
+    border-radius: 50px;
+    background-color: #CF1510;
+}
+
+.qts3 button{
+    font-family:'Raleway';
+    font-size: 27px;
+    text-align: center;
+
+    height: 62px;
+    width: 429px;
+    border-radius: 50px;
+    background-color: var(--verde_claro);
+}
+
+
+.qts4 button{
+    font-family:'Raleway';
+    font-size: 27px;
+    text-align: center;
+    color: var(--branco);
+
+    height: 62px;
+    width: 429px;
+    border-radius: 50px;
+    background-color: var(--verde_escuro);
 }

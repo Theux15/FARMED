@@ -20,9 +20,7 @@
         --preto_transparente: #00000030;
         --branco: #ffffff
     }
-/* Fim da definição de variáveis*/
 
-/* Inicio do CSS do header */
 
 header {
     background-color: var(--preto_transparente);
@@ -209,3 +207,17 @@ h1 {
     padding: 0;
     text-align: justify;
 }
+
+.setad{ 
+    right: 0;
+    position: fixed;
+    margin-right: 10px;
+}
+.setae{ 
+    left: 0; 
+    position: fixed;
+    margin-left: 10px;
+    
+}
+
+

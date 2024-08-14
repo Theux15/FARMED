@@ -176,67 +176,78 @@ p{
     font-size: 36px;
     text-align: center;
     color: var(--branco);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .pergunta{
     height: 347px;
     width: 967px;
     border-radius: 25px;
-    background-color: var(--verde_escuro);
+    background-color: var(--verde_escuro);   
+
+    /*position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;*/
+
 }
 
 .seta_esquerda{
 
 }
 
-.qts1 h3{
+.qts1 button{
     font-family:'Raleway';
     font-size: 27px;
     text-align: center;
     color: var(--branco);
-}
 
-.qts1 {
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;*/
+
     height: 62px;
     width: 429px;
     border-radius: 50px;
     background-color: var(--verde_escuro);
+    
 }
 
-.qts2 h3{
+.qts2 button{
     font-family:'Raleway';
     font-size: 27px;
     text-align: center;
-}
 
-.qts2 {
     height: 62px;
     width: 429px;
     border-radius: 50px;
     background-color: var(--verde_claro);
 }
 
-.qts3 h3{
+.qts3 button{
     font-family:'Raleway';
     font-size: 27px;
     text-align: center;
-}
 
-.qts3 {
     height: 62px;
     width: 429px;
     border-radius: 50px;
     background-color: #CF1510;
 }
 
-.qts4 h3{
+
+.qts4 button{
     font-family:'Raleway';
     font-size: 27px;
     text-align: center;
     color: var(--branco);
-}
 
-.qts4 {
     height: 62px;
     width: 429px;
     border-radius: 50px;

@@ -171,6 +171,7 @@ h1 {
    width: 857px;
    height: 267px;
    font-family: "Open Sans", sans-serif;
+
 }
 
 .img1 img {
@@ -183,5 +184,17 @@ h1 {
     width: 864px;
     height: 330px;
     justify-content: center;
+    
+}
+
+.setad{ 
+    right: 0;
+    position: fixed;
+    margin-right: 10px;
+}
+.setae{ 
+    left: 0; 
+    position: fixed;
+    margin-left: 10px;
     
 }

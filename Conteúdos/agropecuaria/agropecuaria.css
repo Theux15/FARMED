@@ -215,3 +215,15 @@ h1 {
     max-width: 854px;
     margin: 0 auto;
 }
+
+.setad{ 
+    right: 0;
+    position: fixed;
+    margin-right: 10px;
+}
+.setae{ 
+    left: 0; 
+    position: fixed;
+    margin-left: 10px;
+    
+}

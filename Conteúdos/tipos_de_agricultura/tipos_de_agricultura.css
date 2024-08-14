@@ -214,6 +214,16 @@ p {
     overflow: hidden;
 }
 
-.setaesquerda img {
-  
+.setad{ 
+    right: 0;
+    position: fixed;
+    margin-right: 10px;
 }
+.setae{ 
+    left: 0; 
+    position: fixed;
+    margin-left: 10px;
+    
+}
+
+

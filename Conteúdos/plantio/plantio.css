@@ -168,57 +168,47 @@ h1 {
   }
 
 /* Container principal */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Bloco de texto e imagem lado a lado */
 .texto-e-imagem {
   display: flex;
-  align-items: flex-start; /* Alinha o texto e imagem no topo */
+  align-items: flex-start;
   margin-bottom: 20px;
 }
 
-.imagem-container {
+.img1 {
+  width: 900px; /* Mesma largura que o texto */
+  height: auto;
+  object-fit: cover;
   margin-right: 20px;
 }
 
-.imagem1 {
-  width: 487px; /* Largura da imagem */
-  height: 291px; /* Altura da imagem */
-  object-fit: cover; /* Ajusta a imagem para o tamanho especificado */
-}
-
-.texto-imagem1 {
-  max-width: 600px; /* Largura máxima do texto */
+.texto-e-imagem .p1 {
+  width: 900px; /* Mesma largura que a imagem */
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   line-height: 1.6;
-  text-align: left; /* Alinha o texto à esquerda */
+  text-align: left;
 }
 
-/* Bloco de texto e imagem centralizado */
-.texto-e-imagem-centralizado {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.texto-com-imagem {
-  max-width: 100%;
+.texto-acima-imagem {
+  width: 900px; /* Mesma largura que a imagem */
   font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  margin-top: 30px;
-  line-height: 1.6; /* Garante a consistência na altura da linha */
+  line-height: 1.6;
+  margin: 20px auto;
+  text-align: left;
 }
 
-.imagem2 {
-  max-width: 900px; /* Largura máxima da imagem */
+.img2 {
+  width: 900px; /* Mesma largura que o texto */
   height: auto;
+  display: block;
+  margin: 20px auto;
 }
 
 .imagem-centralizada {
@@ -227,28 +217,7 @@ h1 {
   margin-top: 20px;
 }
 
-/* Estilos para títulos */
 h1, h2 {
   font-family: 'Raleway', sans-serif;
   text-align: center;
-}
-
-/* Classes combinadas para garantir consistência */
-.texto-e-imagem, .texto-e-imagem-centralizado {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.imagem-container, .imagem-centralizada {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.imagem1, .imagem2 {
-  max-width: 100%;
-  height: auto;
 }
