@@ -151,28 +151,52 @@ header nav ul {
 
 /* Fim do CSS do rodapé*/
 
-.imagem_fundo{
-    width: 100%;
-    height: auto;
+.quiz{
+    background: url(../../Jogos/imagens/home/jogos_background.png);
+    background-size: cover;
+    height: 100vh;
+
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
-.titulo{
-    font-family:'Raleway';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.quiz h1{
     color: var(--branco);
+    font-family: 'Raleway';
     font-size: 80px;
-    font-weight: bold;
 }
 
-h2{
+.texto h2{
     font-family:'Raleway';
     font-size: 36px;
     text-align: center;
+    
+    margin-top: 84px;
+}
+
+.texto p {
+    font-family:'Raleway';
+    font-size: 18px;
+    text-align: center;
+    
+    margin-top: 25px;
+}
+
+.AgroDesafios{
+    height: 219px;
+    width: 381px;
+    border-radius: 25px;
+    background-color: var(--verde_escuro);
+    color: var(--branco);
+
 }
 
 
+.AgroGlobal{
+    height: 219px;
+    width: 381px;
+    border-radius: 25px;
+    background-color: var(--verde_escuro);
+    color: var(--branco);
+}
