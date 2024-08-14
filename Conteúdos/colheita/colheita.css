@@ -154,7 +154,7 @@ header nav ul {
 h1 {
     text-align: center;
     font-weight: 800;
-    font-size: 55px; 
+    font-size: 5vh; 
 }
 
 .p1 p{
@@ -188,6 +188,7 @@ h1 {
 
 .texto-e-imagem {
     display: flex;
+    justify-content: center;
     align-items: flex-start;
     width: 100%;
 }
@@ -209,9 +210,11 @@ h1 {
     text-align: justify;
 }
 
-
 .texto2-container, .imagem-centralizada {
+    display: flex;
+    justify-content: center;
     width: 886px;
+    margin: 0 auto;
     margin-bottom: 20px;
 }
 
@@ -231,10 +234,10 @@ h1 {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    
 }
 
 h1, h2 {
     font-family: 'Raleway', sans-serif;
     text-align: center;
 }
+

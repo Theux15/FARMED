@@ -246,17 +246,20 @@ header nav ul {
 h1 {
     text-align: center;
     font-weight: 800;
-    font-size: 55px; 
+    font-size: 5vh; 
 }
 
 .p1 p{
    text-align: center;
    width: 888px;
    height: 175px;
+   font-family: "Open Sans", sans-serif;
+   
 }
 
 .p2 p {
     text-align: center;
    width: 557px;
    height: 495px;
+   font-family: "Open Sans", sans-serif;
 }

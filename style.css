@@ -299,7 +299,7 @@ header nav ul {
 .acessar {
     background-color: var(--verde_pantano);
     border-radius: 15px;
-    width: 150px;
+    width: 140px;
     height: 35px;
     
     display: flex;

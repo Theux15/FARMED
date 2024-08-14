@@ -155,21 +155,33 @@ header nav ul {
 h1 {
     text-align: center;
     font-weight: 800;
-    font-size: 55px; 
+    font-size: 5vh;
 }
 
 .p1 p{
    text-align: center;
    width: 326px;
    height: 450px;
+   font-family: "Open Sans", sans-serif;
+
 }
 
 .p2 p {
    text-align: center;
    width: 857px;
    height: 267px;
+   font-family: "Open Sans", sans-serif;
 }
 
 .img1 img {
     width: 528px;
+    height: 431px;
+
+}
+
+.img2 img {
+    width: 864px;
+    height: 330px;
+    justify-content: center;
+    
 }

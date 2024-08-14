@@ -3,8 +3,6 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-    font-family: "Raleway", sans-serif;
 }
 
 /* Inicio Definição de variáveis */
@@ -151,69 +149,117 @@ header nav ul {
 
 /* Fim do CSS do rodapé*/
 
-.titulo-principal {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700; 
+
+.img_fundo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../imagens/paginaJogos/pagJogos_fundo.png);
+    background-size: cover;
+    height: 1024px;
+}
+
+p{
+    font-family:'Raleway';
+    font-size: 18px;
     text-align: center;
-  }
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
+    color: var(--branco);
+    
+    margin-top: 29px;
 }
 
-.conteudo {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff;
-}
+.pergunta h2{
 
-h1 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800; 
+    font-family:'Raleway';
+    font-size: 36px;
     text-align: center;
-    font-size: 5vh;
+    color: var(--branco);
 }
 
-p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #000000;
-    text-align: justify;
-    margin-bottom: 20px;
-    font-family: "Open Sans", sans-serif;
+.pergunta{
+    height: 347px;
+    width: 967px;
+    border-radius: 25px;
+    background-color: var(--verde_escuro);
 }
 
-.img1, .img3 {
-    float: right;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    max-width: 45%;
-    border: none; 
+.seta_esquerda{
+
 }
 
-.img2 {
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    max-width: 45%;
-    border: none; 
+.qts1 h3{
+    font-family:'Raleway';
+    font-size: 27px;
+    text-align: center;
+    color: var(--branco);
 }
 
-.img1 img, .img2 img, .img3 img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border: none; 
+.qts1 {
+    height: 62px;
+    width: 429px;
+    border-radius: 50px;
+    background-color: var(--verde_escuro);
 }
 
-.p1, .p2, .p3 {
-    overflow: hidden;
+.qts2 h3{
+    font-family:'Raleway';
+    font-size: 27px;
+    text-align: center;
 }
 
-.setaesquerda img {
-  
+.qts2 {
+    height: 62px;
+    width: 429px;
+    border-radius: 50px;
+    background-color: var(--verde_claro);
+}
+
+.qts3 h3{
+    font-family:'Raleway';
+    font-size: 27px;
+    text-align: center;
+}
+
+.qts3 {
+    height: 62px;
+    width: 429px;
+    border-radius: 50px;
+    background-color: #CF1510;
+}
+
+.qts4 h3{
+    font-family:'Raleway';
+    font-size: 27px;
+    text-align: center;
+    color: var(--branco);
+}
+
+.qts4 {
+    height: 62px;
+    width: 429px;
+    border-radius: 50px;
+    background-color: var(--verde_escuro);
+}
+
+/*.barra_progresso{
+    width: 600px;
+    height: 25px;
+    background-color: var(--verde_claro);
+    border-radius: 10px;
+    color: var(--branco);
+}*/
+
+.barra_progresso{
+    background: var(--verde_claro);
+    height: 25px;
+    padding: 21px;
+    border-radius: 999px;
+}
+
+.barra_progresso div{
+    height: 10%;
+    background: var(--branco);
+    border-radius: 999px;
 }

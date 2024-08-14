@@ -3,6 +3,8 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 /* Inicio Definição de variáveis */
@@ -151,12 +153,13 @@ header nav ul {
 
 h1 {
     font-family: 'Raleway', sans-serif;
-    font-weight: 700; 
+    font-weight: 800; 
     text-align: center;
+    font-size: 5vh;
   }
 
   body {
-    font-family: Arial, sans-serif;
+    font-family:  'Open Sans', sans-serif;
   }
   
 
@@ -164,17 +167,17 @@ h1 {
     font-family: 'Open Sans', sans-serif;
   }
 
-
+/* Container principal */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-
+/* Bloco de texto e imagem lado a lado */
 .texto-e-imagem {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Alinha o texto e imagem no topo */
   margin-bottom: 20px;
 }
 
@@ -182,20 +185,21 @@ h1 {
   margin-right: 20px;
 }
 
-.imagem1-container img {
-  max-width: 250px;
-  height: auto;
+.imagem1 {
+  width: 487px; /* Largura da imagem */
+  height: 291px; /* Altura da imagem */
+  object-fit: cover; /* Ajusta a imagem para o tamanho especificado */
 }
 
 .texto-imagem1 {
-  max-width: 600px;
+  max-width: 600px; /* Largura máxima do texto */
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   line-height: 1.6;
-  margin-top: 30px; 
+  text-align: left; /* Alinha o texto à esquerda */
 }
 
-
+/* Bloco de texto e imagem centralizado */
 .texto-e-imagem-centralizado {
   display: flex;
   flex-direction: column;
@@ -206,34 +210,30 @@ h1 {
 
 .texto-com-imagem {
   max-width: 100%;
-  margin: 0;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   margin-top: 30px;
+  line-height: 1.6; /* Garante a consistência na altura da linha */
 }
-
 
 .imagem2 {
-  max-width: 900px;
+  max-width: 900px; /* Largura máxima da imagem */
   height: auto;
 }
-
-
 
 .imagem-centralizada {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-
 }
 
-
+/* Estilos para títulos */
 h1, h2 {
   font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 
-
+/* Classes combinadas para garantir consistência */
 .texto-e-imagem, .texto-e-imagem-centralizado {
   display: flex;
   align-items: center;
@@ -242,7 +242,7 @@ h1, h2 {
   margin: 0 auto;
 }
 
-.imagem1-container, .imagem-centralizada {
+.imagem-container, .imagem-centralizada {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -251,14 +251,4 @@ h1, h2 {
 .imagem1, .imagem2 {
   max-width: 100%;
   height: auto;
-}
-
-.texto-imagem1, .texto-com-imagem {
-  flex: 1;
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  line-height: 1.6;
-  text-align: left;
-  max-width: 100%;
-  margin-top: 30px;
 }

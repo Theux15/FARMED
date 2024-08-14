@@ -154,13 +154,12 @@ header nav ul {
 h1 {
     text-align: center;
     font-weight: 800;
-    font-size: 55px; 
+    font-size: 5vh; 
 }
 
 .conteudo {
     max-width: 800px;
     margin: 0 auto;
-    font-family: "Open Sans", sans-serif;
     line-height: 1.6;
     text-align: justify;
 }
@@ -169,6 +168,8 @@ h1 {
     margin: 0;
     padding: 0 20px;
     text-indent: 30px;
+    font-family: "Open Sans", sans-serif;
+    
 }
 
 .conteudo img {

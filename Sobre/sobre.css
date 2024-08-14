@@ -154,6 +154,7 @@ header nav ul {
 
 .quemsomos {
     background-image: url(./imgs/fundo.png);
+    background-size: cover;
     height: 760px;
 
     display: flex;
@@ -192,4 +193,82 @@ header nav ul {
 
 .equipe .membro {
     text-align: center;
+}
+
+.feedback_cima {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback_baixo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario {
+
+    margin: 0px 15px;
+}
+
+.formulario div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#nome, #email, #comentario {
+    background-color: #053105bf;
+    border: 2px solid var(--verde_escuro);
+    border-radius: 12px;
+    padding: 10px;
+
+    color: var(--branco);
+    font-family: 'Open Sans';
+    font-weight: 500;
+
+}
+
+#nome, #email {
+    width: 472px;
+    height: 62px;
+
+    font-size: 20px;
+}
+
+#comentario {
+    width: 472px;
+    height: 134px;
+    font-size: 15px;
+
+    text-align: start;
+    vertical-align: top;
+    overflow: auto;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: var(--verde_pantano);
+    border-radius: 15px;
+    width: 140px;
+    height: 35px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--branco);
+    
 }
