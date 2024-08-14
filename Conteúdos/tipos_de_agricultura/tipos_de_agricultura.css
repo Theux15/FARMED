@@ -192,6 +192,7 @@ p {
     margin-left: 20px;
     margin-bottom: 20px;
     max-width: 45%;
+    border: none; 
 }
 
 .img2 {
@@ -199,13 +200,14 @@ p {
     margin-right: 20px;
     margin-bottom: 20px;
     max-width: 45%;
+    border: none; 
 }
 
 .img1 img, .img2 img, .img3 img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
     display: block;
+    border: none; 
 }
 
 .p1, .p2, .p3 {

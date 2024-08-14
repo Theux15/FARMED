@@ -151,33 +151,11 @@ header nav ul {
 
 /* Fim do CSS do rodapé*/
 
-
 h1 {
     text-align: center;
     font-weight: 800;
     font-size: 55px; 
 }
-
-.p1 p {
-   text-align: center;
-   width: 486px;
-   height: 331px;
-}
-
-.p2 p {
-    text-align: center;
-    width: 482px;
-    height: 308px;
-}
-
-.p3 p {
-    text-align: center;
-    width: 476px;
-    height: 338px;
-}
-
-
-
 
 .conteudo {
     max-width: 800px;
@@ -188,8 +166,9 @@ h1 {
 }
 
 .conteudo p {
-    margin-bottom: 20px;
+    margin: 0;
     padding: 0 20px;
+    text-indent: 30px;
 }
 
 .conteudo img {
@@ -199,11 +178,33 @@ h1 {
     margin: 10px 0;
 }
 
-.p1 {
-    text-indent: 30px;
-    margin-top: 20px;
+.img1 {
+    margin-bottom: 30px;  
 }
 
-.p2 {
-    text-indent: 30px;
+.texto-com-imagem {
+    display: flex;
+    align-items: stretch;  
+    justify-content: space-between;
+    margin-bottom: 30px;  
+}
+
+.texto-com-imagem img {
+    width: 50%;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.texto-com-imagem div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+
+.p1, .p2 {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
 }
