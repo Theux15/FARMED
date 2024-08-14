@@ -154,7 +154,7 @@ header nav ul {
 .quiz{
     background: url(../../Jogos/imagens/home/jogos_background.png);
     background-size: cover;
-    height: 100vh;
+    height: 462px;
 
     display: flex;
     flex-direction: column;
