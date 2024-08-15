@@ -151,6 +151,12 @@ header nav ul {
 
 /* Fim do CSS do rodapé*/
 
+.imagem-fundo {
+    height: 532px;
+    background-image: url(../../imagens/tipos_de_agricultura/header.png);
+    background-size: cover;
+}
+
 .titulo-principal {
     font-family: 'Raleway', sans-serif;
     font-weight: 700; 
@@ -169,6 +175,7 @@ body {
     margin: 20px auto;
     padding: 20px;
     background-color: #ffffff;
+    text-align: justify;
 }
 
 h1 {
@@ -185,6 +192,7 @@ p {
     text-align: justify;
     margin-bottom: 20px;
     font-family: "Open Sans", sans-serif;
+    text-align: justify;
 }
 
 .img1, .img3 {
@@ -212,6 +220,7 @@ p {
 
 .p1, .p2, .p3 {
     overflow: hidden;
+    text-align: justify;
 }
 
 .setad{ 
@@ -225,5 +234,3 @@ p {
     margin-left: 10px;
     
 }
-
-

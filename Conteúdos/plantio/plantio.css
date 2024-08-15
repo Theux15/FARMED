@@ -151,6 +151,12 @@ header nav ul {
 
 /* Fim do CSS do rodapé*/
 
+.imagem-fundo {
+  height: 532px;
+  background-image: url(../../imagens/plantio/header.png);
+  background-size: cover;
+}
+
 h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 800; 
@@ -170,54 +176,81 @@ h1 {
 /* Container principal */
 
 .container {
-  max-width: 1200px;
+  max-width: 888px; 
   margin: 0 auto;
   padding: 20px;
+}
+
+.conteudo {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .texto-e-imagem {
   display: flex;
   align-items: flex-start;
+  gap: 20px;
   margin-bottom: 20px;
 }
 
 .img1 {
-  width: 900px; /* Mesma largura que o texto */
+  flex: 0 0 auto; 
+  max-width: 487px;
   height: auto;
   object-fit: cover;
-  margin-right: 20px;
 }
 
-.texto-e-imagem .p1 {
-  width: 900px; /* Mesma largura que a imagem */
+.p1 {
+  flex: 1;
+  max-width: 326px; 
+  height: 300px; 
   font-family: 'Open Sans', sans-serif;
-  margin: 0;
   line-height: 1.6;
-  text-align: left;
+  margin: 0;
+  text-align: justify;
 }
 
 .texto-acima-imagem {
-  width: 900px; /* Mesma largura que a imagem */
+  width: 100%; 
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
-  margin: 20px auto;
-  text-align: left;
+  margin: 20px 0;
+  text-align: justify;
 }
 
 .img2 {
-  width: 900px; /* Mesma largura que o texto */
+  width: 900px; 
   height: auto;
   display: block;
   margin: 20px auto;
 }
 
-.imagem-centralizada {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
 h1, h2 {
   font-family: 'Raleway', sans-serif;
   text-align: center;
+}
+
+
+.setad { 
+  right: 0;
+  position: fixed;
+  margin-right: 10px;
+}
+
+.setae { 
+  position: fixed;
+  left: 0; 
+  margin-left: 10px;
+}
+
+
+.setad{ 
+  right: 0;
+  position: fixed;
+  margin-right: 10px;
+}
+.setae{ 
+  left: 0; 
+  position: fixed;
+  margin-left: 10px;
+  
 }

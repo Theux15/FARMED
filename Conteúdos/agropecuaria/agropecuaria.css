@@ -152,7 +152,11 @@ header nav ul {
 
 /* Fim do CSS do rodapé*/
 
-
+.imagem-fundo {
+    height: 532px;
+    background-image: url(../../imagens/agropecuaria/agropecuaria_fundo.png);
+    background-size: cover;
+}
 
 h1 {
     text-align: center;
@@ -200,15 +204,15 @@ h1 {
 .imgtex p, .imgtex2 p {
     flex: 1;
     text-align: justify;
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.4;
     font-family: "Open Sans", sans-serif;
 }
 
 .texto-apenas p {
     text-align: justify;
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.4;
     margin-top: 20px;
     font-family: "Open Sans", sans-serif;
     width: 100%;
@@ -220,10 +224,10 @@ h1 {
     right: 0;
     position: fixed;
     margin-right: 10px;
-}
-.setae{ 
+  }
+  .setae{ 
     left: 0; 
     position: fixed;
     margin-left: 10px;
     
-}
+  }

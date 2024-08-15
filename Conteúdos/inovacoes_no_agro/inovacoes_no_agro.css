@@ -157,6 +157,12 @@ header nav ul {
 
 /* Inicio do CSS do cta*/
 
+.imagem-fundo {
+    height: 532px;
+    background-image: url(../../imagens/inovacoes_no_agro/header.png);
+    background-size: cover;
+}
+
 .cta {
     background: url(./Imgs_home/background.png);
     background-size: cover;
@@ -242,8 +248,6 @@ header nav ul {
 
 /* Fim do CSS dos destaques*/
 
-
-
 h1 {
     text-align: center;
     font-weight: 800;
@@ -286,12 +290,76 @@ h1 {
     height: auto;
 }
 
-.setad{ 
+/* Fim do CSS dos destaques*/
+
+
+.container {
+    max-width: 888px; 
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .texto-principal {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    width: 100%; 
+    text-align: justify;
+  }
+  
+  .imagem1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .imagem1 img {
+    width: 100%; 
+    max-width: 888px; 
+    height: auto;
+  }
+  
+  .texto-e-imagem2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%; 
+  }
+  
+  .imagem2 {
+    width: 316px; 
+    height: 436px; 
+  }
+  
+  .imagem2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .texto-secundario {
+    flex: 1;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    width: 100%; 
+    max-width: 888px;
+    text-align: justify;
+  }
+  
+  h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+  }
+
+
+  .setad{ 
+    
     right: 0;
     position: fixed;
     margin-right: 10px;
 }
 .setae{ 
+    position: fixed;
     left: 0; 
     position: fixed;
     margin-left: 10px;

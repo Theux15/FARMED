@@ -174,6 +174,12 @@ h1 {
 
 /*/
 
+.imagem-fundo {
+    height: 532px;
+    background-image: url(../../imagens/colheita/colheita_fundo.png);
+    background-size: cover;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -223,6 +229,7 @@ h1 {
     text-align: left;
     margin: 0;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .imagem2 {
@@ -249,6 +256,17 @@ h1, h2 {
 .setae{ 
     left: 0; 
     position: fixed;
+    margin-left: 10px; 
+}
+
+.setad{ 
+    right: 0;
+    position: fixed;
+    margin-right: 10px;
+  }
+  .setae{ 
+    left: 0; 
+    position: fixed;
     margin-left: 10px;
     
-}
+  }

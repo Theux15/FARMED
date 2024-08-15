@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Inicio Definição de variáveis */
+    :root {
+        --marrom_escuro: #572E0E;
+        --marrom: #91663A; 
+        --amarelo_queimado: #BA8E4F;
+        --verde_claro: #46B954;
+        --verde: #005301;
+        --verde_escuro: #053105;
+        --verde_dark: #042504;
+        --verde_pantano: #162716;
+        --preto_transparente: #00000030;
+        --branco: #ffffff
+    }
+/* Fim da definição de variáveis*/
+
+/* Inicio do CSS do header */
+
+header {
+    background-color: var(--preto_transparente);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 0px 20px;
+    height: 132px;
+    width: 100%;
+    top: 0%;
+
+}
+
+.topoHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+
+.logo_header {
+    width: fit-content;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.logo_style {
+    color: var(--branco);
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 54px;
+}
+
+.header_nav  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.ancoras_padrao {
+    color: var(--branco);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.buscar {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100%;
+}
+
+.divisor {
+    border: none;
+    width: 100%;
+    height: 3px;
+    background-color: var(--branco);
+    margin-top: 10px;
+}
+
+/* Fim do CSS do Header */
+
+.carrossel-wrapper {
+    background-image: url(../../imagens/carrossel/background.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.carrossel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px 0;
+    width: 90vw;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.carrossel-container {
+    display: flex;
+    gap: 20px;
+}
+
+.carrossel-item {
+    min-width: 250px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carrossel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+

@@ -151,6 +151,12 @@ header nav ul {
 
 /* Fim do CSS do rodapé*/
 
+.imagem-fundo {
+    height: 532px;
+    background-image: url(../../imagens/exportacao_importacao/exportacao_importacao_fundo.png);
+    background-size: cover;
+}
+
 
 h1 {
     text-align: center;
@@ -163,10 +169,11 @@ h1 {
    width: 326px;
    height: 450px;
    font-family: "Open Sans", sans-serif;
-
+   text-align: justify;
 }
 
 .p2 p {
+    text-align: justify;
    text-align: center;
    width: 857px;
    height: 267px;
@@ -187,12 +194,66 @@ h1 {
     
 }
 
+.conteudo {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.texto-e-imagem {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+    margin-bottom: 20px;
+}
+
+.p1 {
+    flex: 1;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 372px; 
+    text-align: justify;
+}
+
+.img1 {
+    width: 528px;
+    height: 431px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.p2 {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    margin-top: 20px;
+    text-align: left;
+    width: 900px;
+    text-align: justify;
+}
+
+.img2 {
+    width: 900px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+
 .setad{ 
+    
     right: 0;
     position: fixed;
     margin-right: 10px;
 }
 .setae{ 
+    position: fixed;
     left: 0; 
     position: fixed;
     margin-left: 10px;
