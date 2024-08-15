@@ -48,6 +48,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: left;
+    width: fit-content;
 }
 
 .logo_style {
@@ -113,7 +114,6 @@ header nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: fit-content;
 }
 
 .rodape div {
@@ -151,15 +151,22 @@ header nav ul {
 /* Fim do CSS do rodapé*/
 
 
-.img_fundo {
-    display: flex;
+main {
+    display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     background-image: url(../imagens/paginaJogos/pagJogos2_fundo.png);
     background-size: cover;
-    height: 1024px;
+    height: 100vh;
+}
+
+.sair {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 10%;
+    width: 80%;
 }
 
 p{
@@ -184,30 +191,61 @@ p{
 
 }
 
+
 .pergunta{
     height: 347px;
-    width: 967px;
+    width: 970px;
     border-radius: 25px;
     background-color: var(--verde_escuro);   
 
-    /*position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;*/
+    flex-direction: column;
 
-}
+
+} 
 
 .seta_esquerda{
 
 }
 
+.opcoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 165px;
+    margin-top: 60px;
+    width: fit-content;
+}
+
+.opl {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-right: 54px;
+    margin-left: 50px;
+}
+
+.opr {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 54px;
+    margin-right: 50px;
+}
+
 .qts1 button{
     font-family:'Raleway';
     font-size: 27px;
+    font-weight: 600;
     text-align: center;
     color: var(--branco);
 
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;*/
 
     height: 62px;
     width: 429px;
@@ -219,17 +257,7 @@ p{
 .qts2 button{
     font-family:'Raleway';
     font-size: 27px;
-    text-align: center;
-
-    height: 62px;
-    width: 429px;
-    border-radius: 50px;
-    background-color: #CF1510;
-}
-
-.qts3 button{
-    font-family:'Raleway';
-    font-size: 27px;
+    font-weight: 600;
     text-align: center;
 
     height: 62px;
@@ -238,10 +266,23 @@ p{
     background-color: var(--verde_claro);
 }
 
+.qts3 button{
+    font-family:'Raleway';
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+
+    height: 62px;
+    width: 429px;
+    border-radius: 50px;
+    background-color: #CF1510;
+}
+
 
 .qts4 button{
     font-family:'Raleway';
     font-size: 27px;
+    font-weight: 600;
     text-align: center;
     color: var(--branco);
 
@@ -249,4 +290,33 @@ p{
     width: 429px;
     border-radius: 50px;
     background-color: var(--verde_escuro);
+}
+
+/*.barra_progresso{
+    width: 600px;
+    height: 25px;
+    background-color: var(--verde_claro);
+    border-radius: 10px;
+    color: var(--branco);
+}*/
+
+.barra_progresso{
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 25px;
+    background: var(--verde_claro);
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding: 4px;
+
+    border-radius: 999px;
+}
+
+.barra_progresso div{
+    width: 10%;
+    height: 21px;
+
+    background: var(--branco);
+    border-radius: 999px;
 }
