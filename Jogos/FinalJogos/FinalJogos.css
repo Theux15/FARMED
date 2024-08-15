@@ -48,6 +48,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: left;
+    width: fit-content;
 }
 
 .logo_style {
@@ -131,7 +132,7 @@ header nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 240px;
+    gap: 10px;
     
 }
 

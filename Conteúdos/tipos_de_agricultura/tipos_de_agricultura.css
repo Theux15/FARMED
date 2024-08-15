@@ -50,6 +50,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: left;
+    width: fit-content;
 }
 
 .logo_style {
@@ -103,7 +104,7 @@ header nav ul {
 .rodape {
     display: grid;
     align-items: center;
-    background-color: var(--verde_escuro);
+    background-color: var(--verde_pantano);
     grid-template-columns: 1fr 1fr 1fr;
 
     width: 100%;
@@ -155,6 +156,11 @@ header nav ul {
     height: 532px;
     background-image: url(../../imagens/tipos_de_agricultura/header.png);
     background-size: cover;
+}
+
+h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .titulo-principal {

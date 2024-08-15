@@ -101,7 +101,7 @@ header nav ul {
 .rodape {
     display: grid;
     align-items: center;
-    background-color: var(--verde_escuro);
+    background-color: var(--verde_pantano);
     grid-template-columns: 1fr 1fr 1fr;
 
     width: 100%;
@@ -113,6 +113,7 @@ header nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: fit-content;
 }
 
 .rodape div {
