@@ -85,24 +85,14 @@
                 <img src="./imgs/feedback_left.png" alt="">
 
                 <div class="formulario">
-                    <form action="">
-                        <div>
-                            <label for="nome">Nome</label>
-                            <input id="nome" type="text">
-                        </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input id="email" type="email">
-                        </div>
-                        <div>
-                            <label for="comentario">Comentário</label>
-                            <input id="comentario" type="text">
-                        </div>
-    
-                        <div class="botao">
-                            <button>Enviar</button>
-                        </div>
-                    </form>
+                    <form action="https://formsubmit.co/farmededutec@gmail.com" method="POST">
+                        <input type="text" name="name" required placeholder="nome">
+                        <input type="email" name="email" required placeholder="email">
+                        <input type="text" name="text" required placeholder="Seu Feedback">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://5543-theux15-farmed-obo6gn6rccg.ws-us116.gitpod.io/index.html">
+                        <button type="submit">Enviar</button>
+                     </form>
                 </div>
 
                 <img src="./imgs/feedback_right.png" alt="">

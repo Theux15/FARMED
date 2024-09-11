@@ -206,8 +206,9 @@ p{
 
 } 
 
-.seta_esquerda{
-
+.prox {
+    background: none;
+    cursor: pointer;
 }
 
 .opcoes {
@@ -217,6 +218,10 @@ p{
     height: 165px;
     margin-top: 60px;
     width: fit-content;
+}
+
+.opcoes button{
+    cursor: pointer;
 }
 
 .opl {
@@ -242,10 +247,6 @@ p{
     text-align: center;
     color: var(--branco);
 
-    /*display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;*/
 
     height: 62px;
     width: 429px;
@@ -259,11 +260,12 @@ p{
     font-size: 27px;
     font-weight: 600;
     text-align: center;
+    color: var(--branco);
 
     height: 62px;
     width: 429px;
     border-radius: 50px;
-    background-color: var(--verde_claro);
+    background-color: var(--verde_escuro);
 }
 
 .qts3 button{
@@ -271,11 +273,12 @@ p{
     font-size: 27px;
     font-weight: 600;
     text-align: center;
+    color: var(--branco);
 
     height: 62px;
     width: 429px;
     border-radius: 50px;
-    background-color: #CF1510;
+    background-color: var(--verde_escuro);
 }
 
 
@@ -314,9 +317,18 @@ p{
 }
 
 .barra_progresso div{
-    width: 10%;
     height: 21px;
 
     background: var(--branco);
     border-radius: 999px;
+}
+
+#correto {
+    background-color: var(--verde_claro);
+    color: white;
+}
+
+#incorreto {
+    background-color: #CF1510;
+    color: white;
 }
