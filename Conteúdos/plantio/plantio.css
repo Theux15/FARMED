@@ -221,7 +221,7 @@ h1 {
 }
 
 .img2 {
-  width: 900px; 
+  width: 848px; 
   height: auto;
   display: block;
   margin: 20px auto;
@@ -237,12 +237,14 @@ h1, h2 {
   right: 0;
   position: fixed;
   margin-right: 10px;
+  bottom: 180px;
 }
 
 .setae { 
   position: fixed;
   left: 0; 
   margin-left: 10px;
+  bottom: 180px;
 }
 
 

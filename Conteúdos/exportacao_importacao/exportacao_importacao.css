@@ -232,7 +232,7 @@ h1 {
     line-height: 1.6;
     margin-top: 20px;
     text-align: left;
-    width: 900px;
+    width: 860px;
     text-align: justify;
 }
 
@@ -254,12 +254,13 @@ h1, h2 {
     right: 0;
     position: fixed;
     margin-right: 10px;
+    bottom: 180px;
 }
 .setae{ 
     position: fixed;
     left: 0; 
-    position: fixed;
     margin-left: 10px;
+    bottom: 180px;
     
 }
 

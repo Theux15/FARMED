@@ -48,3 +48,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+// const enviar = document.querySelector(".feedback_baixo button")
+
+/*
+enviar.addEventListener("click", () => {
+    alert("Enviado")
+}) 
+*/

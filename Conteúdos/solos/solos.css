@@ -223,11 +223,13 @@ h1 {
     right: 0;
     position: fixed;
     margin-right: 10px;
+    bottom: 180px;
 }
 .setae{ 
     left: 0; 
     position: fixed;
     margin-left: 10px;
+    bottom: 180px;
     
 }
 

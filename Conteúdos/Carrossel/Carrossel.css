@@ -157,6 +157,10 @@ button {
     height: 50px;
 }
 
+.seta-pdireita, .seta-pesquerda {
+    color: var(--branco);
+}
+
 button:focus {
     outline: none;
 }

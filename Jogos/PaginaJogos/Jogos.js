@@ -59,14 +59,22 @@ const barraProgresso = document.querySelector(".barra_progresso div")
 
 let i = 0
 let acertos = 0
+let respostaSelecionada = false;
 
 localStorage.removeItem('acertos');
 mudarPergunta()
 
 prox.addEventListener("click", () => {
+
+    if (!respostaSelecionada) {
+        alert("Por favor, selecione uma alternativa antes de continuar.");
+        return;
+    }
+
     i++
     if (i < perguntas.length) {
         mudarPergunta()
+        respostaSelecionada = false;
     } else {
         finalizarQuiz()
     }
@@ -112,12 +120,21 @@ function verificarResposta(index) {
         opcoes[index].id = 'incorreto'
         opcoes[respostaCorreta].id = 'correto'
     }
+
+    respostaSelecionada = true;
 }
 
 function finalizarQuiz() {
     localStorage.setItem('acertos', acertos)
     window.location.href = "../FinalJogos/FinalJogos.html"
 }
+
+window.addEventListener('beforeunload', (event) => {
+    if (i < perguntas.length - 1) {
+        event.preventDefault();
+        event.returnValue = "Tem certeza que deseja sair do quiz? Seu progresso será perdido.";
+    }
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     const lupa = document.getElementById('lupa');
