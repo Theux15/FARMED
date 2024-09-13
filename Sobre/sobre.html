@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../../Icones/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="sobre.css">
+    <script src="sobre.js" defer></script>
     <title>FARMED</title>
 </head>
 <body>
@@ -30,8 +31,12 @@
                 </nav>
             </div>
             <div class="buscar">
-                <img src="../Icones/Pesquisa.png" alt="Lupa de pesquisa">
-            </div>
+                <img id="lupa" src="../../Icones/Pesquisa.png" alt="Lupa de pesquisa">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Pesquisar..." autocomplete="off">
+                    <ul id="suggestions"></ul>
+                </div>
+            </div> 
         </div>
         <hr class="divisor">
     </header>
@@ -84,17 +89,30 @@
             <div class="feedback_baixo">
                 <img src="./imgs/feedback_left.png" alt="">
 
-                <div class="formulario">
-                    <form action="https://formsubmit.co/farmededutec@gmail.com" method="POST">
-                        <input type="text" name="name" required placeholder="nome">
-                        <input type="email" name="email" required placeholder="email">
-                        <input type="text" name="text" required placeholder="Seu Feedback">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://5543-theux15-farmed-obo6gn6rccg.ws-us116.gitpod.io/index.html">
-                        <button type="submit">Enviar</button>
-                     </form>
-                </div>
 
+                <div class="feedback_baixo">
+                    <div class="formulario">
+                        <form action="https://formsubmit.co/farmededutec@gmail.com" method="POST">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" class="verde" required>
+                            
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="verde" required>
+                            
+                            <label for="text">Comentário</label>
+                            <textarea id="text" name="text" class="verde" required></textarea>
+                            
+                            
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://5561-theux15-farmed-s7wxqf8evdi.ws-us116.gitpod.io/">
+                
+                            <button type="submit">Enviar</button>
+                            
+                        </form>
+                    </div>
+                </div>
+                
+                
                 <img src="./imgs/feedback_right.png" alt="">
             </div>
 
@@ -120,7 +138,7 @@
                             <a href="tel:+55(11)98954-2257"><img src="../Icones/Telefone.png" alt="Icone de telefone">(11) 98954-2349</a>
                         </li>
                         <li>
-                            <a href="mailto:farmedcontato@gmail.com"><img src="../Icones/Email.png" alt="Icone de Email">farmedcontato@gmail.com</a>
+                            <a href="mailto:farmededutec@gmail.com"><img src="../Icones/Email.png" alt="Icone de Email">farmededutec@gmail.com</a>
                         </li>
                     </ul>
                 </div>

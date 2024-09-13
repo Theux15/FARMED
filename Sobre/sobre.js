@@ -1,11 +1,3 @@
-const acertos = localStorage.getItem('acertos')
-const numPontos = document.querySelector(".pontos")
-
-
-console.log(`Acertos: ${acertos}`)
-numPontos.innerHTML = acertos
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const lupa = document.getElementById('lupa');
     const searchBox = document.querySelector('.search-box');

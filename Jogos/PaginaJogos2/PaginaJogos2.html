@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../../Icones/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./PaginaJogos2.css">
+    <script src="pgjogos2.js" defer></script>
     <title>FARMED</title>
 </head>
 <body>
@@ -30,8 +31,12 @@
                 </nav>
             </div>
             <div class="buscar">
-                <img src="../../Icones/Pesquisa.png" alt="Lupa de pesquisa">
-            </div>
+                <img id="lupa" src="../../Icones/Pesquisa.png" alt="Lupa de pesquisa">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Pesquisar..." autocomplete="off">
+                    <ul id="suggestions"></ul>
+                </div>
+</div> 
         </div>
         <hr class="divisor">
     </header>
@@ -56,9 +61,6 @@
 
         
         <div class="opcoes">
-            <div class="seta_esquerda">
-                <img src="../../Jogos/imagens/paginaJogos/seta_esquerda.png" alt="seta_esquerda">
-            </div>
 
 
         

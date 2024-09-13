@@ -232,3 +232,98 @@ h1 {
 }
 
 
+.buscar {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+.buscar img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease;
+    z-index: 2; 
+    margin-left: 10px; 
+}
+
+
+.search-box {
+    display: none;
+    position: relative;
+    background-color: var(--branco);
+    border: none; 
+    border-radius: 25px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+
+.buscar.lupa-ativa img {
+    transform: translateX(-20px); 
+}
+
+.buscar.lupa-ativa .search-box {
+    display: block;
+    margin-left: 10px; 
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    padding-left: 50px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    
+    -webkit-appearance: none; 
+    -moz-appearance: none;    
+    appearance: none;
+}
+
+#suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 25px;
+    border-top: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: calc(100% + 5px); 
+    left: 0;
+    width: 100%; 
+    z-index: 1;
+    background-color: var(--branco); 
+    overflow-y: auto; 
+    max-height: 250px; 
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+#suggestions li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+#suggestions li:hover {
+    background-color: var(--verde_claro);
+    color: var(--branco);
+}
+
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+}
+

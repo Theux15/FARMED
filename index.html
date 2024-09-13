@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../../Icones/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>FARMED</title>
 </head>
 <body>
@@ -30,8 +31,13 @@
                 </nav>
             </div>
             <div class="buscar">
-                <img src="./Icones/Pesquisa.png" alt="Lupa de pesquisa">
-            </div>
+                <img id="lupa" src="../../Icones/Pesquisa.png" alt="Lupa de pesquisa">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Pesquisar..." autocomplete="off">
+                    <ul id="suggestions"></ul>
+                </div>
+            </div> 
+
         </div>
         <hr class="divisor">
     </header>
@@ -42,12 +48,12 @@
             <h1>Agricultura</h1>
             <h2>Cultivando o futuro, alimentando o mundo</h2>
 
-            <a id="descobrir">Descubra +</a>
+            <a href="././Conteúdos/Carrossel/Carrossel.html" id="descobrir">Descubra +</a>
 
             <button class="seta-baixo"><img src="./Icones/SetaBaixoPrenchido.png" alt=""></button>
         </div>
         
-        <section class="destaques">
+        <section class="destaques" id="destaques">
             <h2>Destaques</h2>
             <div>
                 <a href="./Conteúdos/exportacao_importacao/exportacao_importacao.html">

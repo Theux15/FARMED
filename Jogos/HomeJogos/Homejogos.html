@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../../Icones/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="Homejogos.css">
+    <script src="home.js" defer></script>
     <title>FARMED</title>
 </head>
 <body>
@@ -30,8 +31,12 @@
                 </nav>
             </div>
             <div class="buscar">
-                <img src="../../Icones/Pesquisa.png" alt="Lupa de pesquisa">
-            </div>
+                <img id="lupa" src="../../Icones/Pesquisa.png" alt="Lupa de pesquisa">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Pesquisar..." autocomplete="off">
+                    <ul id="suggestions"></ul>
+                </div>
+            </div> 
         </div>
         <hr class="divisor">
     </header>
@@ -53,7 +58,7 @@
                     <h3>AgroDesafios</h3>
                 </div>
                 <div class="card-baixo">
-                    <p>Teste seus conhecimentos sobre solo, plantio, colheita e os caminhos da exportação e importação. <br>10 perguntas | 5 min</p> 
+                    <p>Teste seus conhecimentos sobre solo, plantio, colheita e os caminhos da exportação e importação. <br>10 perguntas</p> 
     
                     <a href="../PaginaJogos/PaginaJogos.html">Jogar</a>
                 </div>
@@ -64,7 +69,7 @@
                     <h3>AgroGlobal</h3>
                 </div>
                 <div class="card-baixo">
-                    <p>Teste seus conhecimentos sobre solo, plantio, colheita e os caminhos da exportação e importação. <br>6 perguntas | 6 min</p>
+                    <p>Teste seus conhecimentos sobre solo, plantio, colheita e os caminhos da exportação e importação. <br>6 perguntas</p>
     
                     <a href="../PaginaJogos2/PaginaJogos2.html">Jogar</a>
                 </div>

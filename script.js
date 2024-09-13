@@ -1,10 +1,10 @@
-const acertos = localStorage.getItem('acertos')
-const numPontos = document.querySelector(".pontos")
+const setaBaixo = document.querySelector('.seta-baixo');
+const destaquesSection = document.querySelector('#destaques');
 
 
-console.log(`Acertos: ${acertos}`)
-numPontos.innerHTML = acertos
-
+setaBaixo.addEventListener('click', function() {
+    destaquesSection.scrollIntoView({ behavior: 'smooth' });
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     const lupa = document.getElementById('lupa');

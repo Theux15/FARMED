@@ -1,9 +1,20 @@
-const acertos = localStorage.getItem('acertos')
-const numPontos = document.querySelector(".pontos")
+const carrossel = document.querySelector('.carrossel');
+const prevButton = document.querySelector('.seta-pesquerda'); 
+const nextButton = document.querySelector('.seta-pdireita'); 
 
 
-console.log(`Acertos: ${acertos}`)
-numPontos.innerHTML = acertos
+const scrollAmount = 300; 
+
+
+nextButton.addEventListener('click', () => {
+    carrossel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+});
+
+
+prevButton.addEventListener('click', () => {
+    carrossel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+});
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
