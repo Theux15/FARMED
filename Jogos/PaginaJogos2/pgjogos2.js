@@ -1,3 +1,113 @@
+const perguntas = [
+    {
+        pergunta: "Qual é o principal componente do solo responsável por sua fertilidade?",
+        alternativas: ["Areia", "Argila", "Matéria orgânica", "Calcário"],
+        alternativaCorreta: 2
+    },
+    {
+        pergunta: "Qual é a técnica de plantio que minimiza a perturbação do solo e ajuda a conservar a umidade?",
+        alternativas: ["Plantio direto", "Queimada controlada", "Aração profunda", "Rotação de culturas"],
+        alternativaCorreta:  0
+    },
+    {
+        pergunta: "Qual das seguintes práticas é essencial para determinar o momento ideal da colheita?",
+        alternativas: ["Análise de solo", "Monitoramento climático", " Irrigação controlada", "Fertilização orgânica"],
+        alternativaCorreta: 1
+    },
+    {
+        pergunta: "Qual é a principal commodity agrícola exportada pelo Brasil?",
+        alternativas: ["Milho", "Café", "Soja", "Cana-de-açúcar"],
+        alternativaCorreta: 2
+    },
+    {
+        pergunta: "Qual país é o maior importador de trigo do mundo?",
+        alternativas: ["China", "Índia", "Japão", "Egito"],
+        alternativaCorreta: 3
+    },
+    {
+        pergunta: "Qual tipo de solo é ideal para o cultivo de arroz?",
+        alternativas: ["Solo arenoso", "Solo argiloso", "Solo alagadiço", "Solo calcário"],
+        alternativaCorreta: 2
+    }
+]
+
+
+const p = document.querySelector("h2")
+const np = document.querySelector(".pergunta p")
+const prox = document.querySelector(".prox")
+const opcoes = document.querySelectorAll(".opcao")
+const barraProgresso = document.querySelector(".barra_progresso div")
+
+let i = 0
+let acertos = 0
+
+localStorage.removeItem('acertos');
+mudarPergunta()
+
+prox.addEventListener("click", () => {
+    i++
+    if (i < perguntas.length) {
+        mudarPergunta()
+    } else {
+        finalizarQuiz()
+    }
+})
+
+function mudarPergunta() {
+
+    if (i > 0 ) {
+        opcoes.forEach(botao => {
+            botao.disabled = false
+            botao.removeAttribute('id')
+        })
+    }
+
+    p.innerHTML =  perguntas[i].pergunta
+    np.innerHTML = `Questão ${i+1} de ${perguntas.length}`
+
+
+
+    opcoes.forEach((botao, index) => {
+        botao.innerHTML = perguntas[i].alternativas[index];
+    })
+
+    const progresso = ((i + 1) / perguntas.length) * 100
+    barraProgresso.style.width = `${progresso}%`
+}
+
+function verificarResposta(index) {
+    opcoes.forEach(botao => {
+        botao.disabled = true
+    })
+    const respostaCorreta = perguntas[i].alternativaCorreta
+
+    console.log(`Resposta selecionada: ${index}`);
+    console.log(`Resposta correta: ${respostaCorreta}`);
+
+    if (index === respostaCorreta) {
+        opcoes[index].id = 'correto'
+
+        acertos++
+        console.log(acertos)
+    } else {
+        opcoes[index].id = 'incorreto'
+        opcoes[respostaCorreta].id = 'correto'
+    }
+}
+
+function finalizarQuiz() {
+    localStorage.setItem('acertos', acertos)
+    window.location.href = "../FinalJogos/FinalJogos.html"
+}
+
+
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const lupa = document.getElementById('lupa');
     const searchBox = document.querySelector('.search-box');

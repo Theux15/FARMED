@@ -122,8 +122,7 @@ p{
     font-size: 18px;
     text-align: center;
     color: var(--branco);
-    
-    margin-top: 29px;
+    margin-bottom: 10px;
 }
 
 .pergunta h2{
@@ -146,7 +145,7 @@ p{
     width: 970px;
     border-radius: 25px;
     background-color: var(--verde_escuro);
-    padding: 10px;
+    padding: 20px;
 
     display: flex;
     align-items: center;
@@ -157,7 +156,6 @@ p{
 } 
 
 .opcoes {
-    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -165,6 +163,15 @@ p{
     margin-top: 60px;
     width: fit-content;
     padding-left: 90px;
+}
+
+.opcao {
+    cursor: pointer;
+}
+
+.seta_direita button{
+    background: none;
+    cursor: pointer;
 }
 
 .opl {
@@ -190,11 +197,6 @@ p{
     text-align: center;
     color: var(--branco);
 
-    /*display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;*/
-
     height: 62px;
     width: 429px;
     border-radius: 50px;
@@ -207,11 +209,12 @@ p{
     font-size: 27px;
     font-weight: 600;
     text-align: center;
+    color: var(--branco);
 
     height: 62px;
     width: 429px;
     border-radius: 50px;
-    background-color: var(--verde_claro);
+    background-color: var(--verde_escuro);
 }
 
 .qts3 button{
@@ -219,11 +222,12 @@ p{
     font-size: 27px;
     font-weight: 600;
     text-align: center;
+    color: var(--branco);
 
     height: 62px;
     width: 429px;
     border-radius: 50px;
-    background-color: #CF1510;
+    background-color: var(--verde_escuro);
 }
 
 
@@ -239,14 +243,6 @@ p{
     border-radius: 50px;
     background-color: var(--verde_escuro);
 }
-
-/*.barra_progresso{
-    width: 600px;
-    height: 25px;
-    background-color: var(--verde_claro);
-    border-radius: 10px;
-    color: var(--branco);
-}*/
 
 .barra_progresso{
     display: flex;
@@ -267,6 +263,16 @@ p{
 
     background: var(--branco);
     border-radius: 999px;
+}
+
+#correto {
+    background-color: var(--verde_claro);
+    color: white;
+}
+
+#incorreto {
+    background-color: #CF1510;
+    color: white;
 }
 
 .buscar {

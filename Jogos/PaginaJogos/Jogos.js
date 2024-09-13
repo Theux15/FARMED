@@ -10,23 +10,28 @@ const perguntas = [
         alternativaCorreta: 1
     },
     {
+        pergunta: "Qual tecnologia agrícola utiliza sensores e sistemas de GPS para otimizar o uso de água e fertilizantes, de forma precisa?",
+        alternativas: ["Agricultura de conservação", "Agricultura orgânica", "Agricultura hidropônica", "Agricultura de precisão "],
+        alternativaCorreta: 3
+    },
+    {
         pergunta: "Qual das seguintes inovações agrícolas é projetada para reduzir o desperdício de água, proteger o solo e conservar os recursos naturais?",
         alternativas: ["Agricultura de precisão", "Agricultura hidropônica", "Agricultura de conservação ", "Agricultura orgânica"],
         alternativaCorreta: 2 
     },
     {
-        pergunta: "Qual tecnologia agrícola utiliza sensores e sistemas de GPS para otimizar o uso de água e fertilizantes, de forma precisa?",
+        pergunta: "Qual é o nome do método de cultivo que evita o uso de agrotóxicos, fertilizantes sintéticos e organismos geneticamente modificados, promovendo práticas sustentáveis e ecológicas?",
         alternativas: ["Agricultura hidropônica", "Agricultura orgânica", "Agricultura hidropônica", "Agricultura de precisão"],
         alternativaCorreta: 1
     },
     {
         pergunta: "Qual é o principal método de criação de gado que envolve a liberdade de movimento e acesso a pastagens naturais?",
-        alternativas: ["Confinamento", "Pastoreio rotativo", "Integração lavoura-pecuária-floresta (ILPF)", "Estabulação permanente"],
+        alternativas: ["Confinamento", "Pastoreio rotativo", "Integração ILPF", "Estabulação permanente"],
         alternativaCorreta: 1
     },
     {
         pergunta: "Qual é o principal objetivo da integração lavoura-pecuária-floresta (ILPF)?",
-        alternativas: ["Aumentar a produtividade agrícola", "Reduzir a dependência de agrotóxicos", "Promover a sustentabilidade ambiental", "Minimizar os custos de produção"],
+        alternativas: ["Aumentar a produtividade", "Reduzir agrotóxicos", "Sustentabilidade ambiental", "Minimizar os custos"],
         alternativaCorreta: 2
     },
     {
