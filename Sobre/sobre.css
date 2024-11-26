@@ -71,6 +71,12 @@ header nav ul {
     list-style: none;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+
+body, input, button, a {
+    font-family: 'Raleway', sans-serif;
+}
+
 .ancoras_padrao {
     color: var(--branco);
     text-transform: uppercase;
