@@ -189,7 +189,7 @@ header nav ul {
 
 }
 
-.jogar-novamente{
+.jogar-novamente, .ver-ranking{
     width: 284px;
     height: 56px;
     border-radius: 10px;
@@ -200,7 +200,7 @@ header nav ul {
     margin-top: 15px;
 }
 
-.jogar-novamente a{
+.jogar-novamente a, .ver-ranking a{
     color: var(--branco);
     font-family: 'Raleway';
     font-size: 20px;
