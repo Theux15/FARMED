@@ -2,45 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="login.css">
+    <script src="./login.js" defer></script>
     <title>pagina do login</title>
 </head>
 <body>
 
    <header>
-    <div class="topoHeader">
-        <a href="../../index.html" class="logo_header"><h1 class="logo_style">FARMED</h1></a>
-        <div class="header_nav">
-            <nav>
-                <ul>
-                    <li>
-                        <a class="ancoras_padrao" href="../../Conteúdos/Carrossel/Carrossel.html">Conteúdos</a>
-                    </li>
-                    <li>
-                        <a class="ancoras_padrao" href="../../Jogos/HomeJogos/Homejogos.html">Jogos</a>
-                    </li>
-                    <li>
-                        <a class="ancoras_padrao" href="../../Sobre/sobre.html">Sobre</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="buscar">
-            <img id="lupa" src="../../Icones/Pesquisa.png" alt="Lupa de pesquisa">
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Pesquisar..." autocomplete="off">
-                <ul id="suggestions"></ul>
+        <div class="topoHeader">
+            <a href="../../index.html" class="logo_header"><h1 class="logo_style">FARMED</h1></a>
+            <div class="header_nav">
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="ancoras_padrao" href="../../Conteúdos/Carrossel/Carrossel.html">Conteúdos</a>
+                        </li>
+                        <li>
+                            <a class="ancoras_padrao" href="../../Jogos/HomeJogos/Homejogos.html">Jogos</a>
+                        </li>
+                        <li>
+                            <a class="ancoras_padrao" href="../../Sobre/sobre.html">Sobre</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+            <div class="buscar">
+                <img id="lupa" src="../../Icones/Pesquisa.png" alt="Lupa de pesquisa">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Pesquisar..." autocomplete="off">
+                    <ul id="suggestions"></ul>
+                </div>
+            </div> 
         </div>
-        
-   </header>
+        <hr class="divisor">
+    </header>
 
-    <div>
+    <div class="login">
        <form>
         
         <div class="circulo">
@@ -54,7 +56,6 @@
             <input type="text" id="login" name="login" class="input-field" placeholder="Login">
         </div>
 
-        
         <div class="input-group">
             <div class="icon-wrapper">
                 <img src="./imagens/lock.png" alt="Ícone de cadeado">

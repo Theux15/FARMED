@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
 /* Inicio Definição de variáveis */
     :root {
         --marrom_escuro: #572E0E;
@@ -31,7 +36,6 @@ header {
     height: 132px;
     width: 100%;
     top: 0%;
-
 }
 
 .topoHeader {
@@ -44,11 +48,11 @@ header {
 }
 
 .logo_header {
-    width: fit-content;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: left;
+    width: fit-content;
 }
 
 .logo_style {
@@ -75,17 +79,16 @@ header nav ul {
     color: var(--branco);
     text-transform: uppercase;
     text-decoration: none;
-    font-family: 'Raleway';
+    font-family:'Raleway';
     font-weight: 600;
     font-size: 20px;
 }
 
-.divisor {
-    border: none;
-    width: 100%;
-    height: 3px;
-    background-color: var(--branco);
-    margin-top: 10px;
+.buscar {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100%;
 }
 
 .divisor {
@@ -119,22 +122,31 @@ p {
 }
 
 /* Fim do CSS do Header */
+
+
+
+
 body {
+    font-family: 'Raleway', sans-serif;
+    overflow-y: auto;
     background-image: url('./imagens/background.png');
+    width: 100%;
     background-size: cover;
     background-position: center;
-    font-family: 'Raleway', sans-serif;
+}
+
+.login {
+
 }
 
 
 form {
-    background-color: var(--verde_dark);
-    width: 514px;
-    height: 309px;
-    padding: 30px;
-    margin: 200px auto;
+    background-color: #013202;
+    width: 530px;
+    height: 475px; /* Increased height */
+    padding: 20px;
+    margin: 200px auto; /* Increased margin */
     border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,33 +171,32 @@ form label img {
 .circulo {
     width: 150px; 
     height: 150px;
-    background-color: #BA8E4F; 
+    background-color:  #BA8E4F;
     border-radius: 50%; 
     display: flex;
     justify-content: center; 
     align-items: center; 
-    margin: 0 auto; 
+    margin: 20px auto; 
     position: relative; 
-    top: -40px; 
-}
+}  
 
 .circulo-img {
-    width: 60px; 
-    height: 60px; 
-    object-fit: contain;
+    width: 150px; 
+    object-fit: cover;
     border-radius: 50%;
 }
-
 
 
 form input[type="text"],
 form input[type="password"] {
     width: 100%;
     padding: 10px 10px 10px 40px;
-    border: none; 
+    border: none;
+    margin-left: 10px; 
+    border-radius: 10px;
     font-size: 16px;
     background-color: rgba(192, 170, 95, 0.8); 
-    color: var(--marrom_escuro); 
+    color: #635528; 
 }
 
 form input[type="text"]:focus,
@@ -196,7 +207,7 @@ form input[type="password"]:focus {
 
 form input[type="text"]::placeholder,
 form input[type="password"]::placeholder {
-    color: var(--marrom_escuro);
+    color: #635528;
     opacity: 0.8; 
 }
 
@@ -205,15 +216,17 @@ form input[type="checkbox"] {
 }
 
 form button {
-    background-color: var(--verde_dark);
+    background-color: #013202;
+    width: 350px;
     color: var(--branco);
-    padding: 34px 58px;
+    padding: 15px 50px; /* Adjusted padding */
     font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 0 0 50px 50px; /* Adjusted border radius */
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;  
     opacity: 0.8;
+    margin-top: 20px; /* Adjusted margin */
 }
 
 form button:hover {
@@ -245,7 +258,7 @@ form input[type="checkbox"] {
 form .icon-wrapper {
     width: 50px;
     height: 50px;
-    background-color: var(--verde_escuro);
+    background-color: #013202;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -283,20 +296,20 @@ form .icon-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: none;
+    border-radius: 0;
     position: absolute;
     left: 0%;
 }
 
 form .input-field {
     padding-left: 40px;
-    width: 100%;
-    height: 40px;
-    background-color: var(--verde_dark);
+    width: 20%;
+    height: 50px;
+    background-color: #013202;
     color: #C0AA5F;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 0;
+    font-size: 6px;
 }
 
 form .icon-wrapper img {
@@ -307,7 +320,7 @@ form .icon-wrapper img {
 form .checkbox-wrapper,
 form .forgot-password-wrapper {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 2px;
 }
 
 form .checkbox-wrapper label,
@@ -366,3 +379,100 @@ form .create-account-wrapper a:hover {
     margin: 0;
     display: inline-block;
 }
+
+.buscar {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+.buscar img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease;
+    z-index: 2; 
+    margin-left: 10px; 
+}
+
+
+.search-box {
+    display: none;
+    position: relative;
+    background-color: var(--branco);
+    border: none; 
+    border-radius: 25px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+
+.buscar.lupa-ativa img {
+    transform: translateX(-20px); 
+}
+
+.buscar.lupa-ativa .search-box {
+    display: block;
+    margin-left: 10px; 
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    padding-left: 50px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    
+    -webkit-appearance: none; 
+    -moz-appearance: none;    
+    appearance: none;
+}
+
+#suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 25px;
+    border-top: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: calc(100% + 5px); 
+    left: 0;
+    width: 100%; 
+    z-index: 1;
+    background-color: var(--branco); 
+    overflow-y: auto; 
+    max-height: 250px; 
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+#suggestions li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+#suggestions li:hover {
+    background-color: var(--verde_claro);
+    color: var(--branco);
+}
+
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+}
+

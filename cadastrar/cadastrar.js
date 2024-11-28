@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const lupa = document.getElementById('lupa');
     const searchBox = document.querySelector('.search-box');
