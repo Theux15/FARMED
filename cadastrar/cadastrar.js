@@ -47,4 +47,51 @@ document.addEventListener('DOMContentLoaded', () => {
             buscar.classList.remove('lupa-ativa');
         }
     });
+
+    const form = document.querySelector('.formulario');
+    const nomeInput = document.getElementById('nome');
+    const emailInput = document.getElementById('email');
+    const senhaInput = document.getElementById('senha');
+    const confirmarSenhaInput = document.getElementById('confirmar-senha');
+    const cadastrarButton = document.querySelector('.botao button');
+
+    cadastrarButton.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        const nome = nomeInput.value;
+        const email = emailInput.value;
+        const senha = senhaInput.value;
+        const confirmarSenha = confirmarSenhaInput.value;
+
+        if (senha !== confirmarSenha) {
+            alert('As senhas não coincidem!');
+            return;
+        }
+
+        const userData = {
+            nome_usuario: nome,
+            senha: senha
+        };
+
+        fetch('http://localhost:3000/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(userData)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.message) {
+                alert(data.message);
+                window.location.href = 'login.html';
+            } else {
+                alert('Erro ao cadastrar usuário!');
+            }
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+            alert('Erro ao cadastrar usuário!');
+        });
+    });
 });

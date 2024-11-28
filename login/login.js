@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const lupa = document.getElementById('lupa');
     const searchBox = document.querySelector('.search-box');
@@ -48,5 +46,44 @@ document.addEventListener('DOMContentLoaded', () => {
             searchBox.classList.remove('show');
             buscar.classList.remove('lupa-ativa');
         }
+    });
+
+    const form = document.querySelector('form');
+    const loginInput = document.getElementById('login');
+    const senhaInput = document.getElementById('senha');
+    const loginButton = document.querySelector('button[type="submit"]');
+
+    loginButton.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        const login = loginInput.value;
+        const senha = senhaInput.value;
+
+        const loginData = {
+            nome_usuario: login,
+            senha: senha
+        };
+
+        fetch('http://localhost:3000/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(loginData)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.token) {
+                localStorage.setItem('token', data.token);
+                alert('Login bem-sucedido!');
+                window.location.href = 'bemvindo.html'; // Redirecionar para a tela de boas-vindas
+            } else {
+                alert('Erro ao fazer login!');
+            }
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+            alert('Erro ao fazer login!');
+        });
     });
 });
