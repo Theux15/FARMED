@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="login.css">
     <title>pagina do login</title>
 </head>
@@ -38,28 +42,37 @@
 
     <div>
        <form>
-        <div class="fundo">
-            <label for="fundo">
-                <img src="./imagens/background.png" alt="imagem fundo">
-            </label>
+        
+        <div class="circulo">
+            <img src="./imagens/person.png" alt="Icone de pessoa" class="circulo-img">
         </div>
-           <div>
-            <label for="login">
-               <img src="./imagens/person.png" alt="pessoa fundo">
-            </label>
-            <input type="text" id="login" name="login" placeholder="Login">
-           </div>    
-           <div>
-            <label for="senha">
-                <img src="./imagens/lock.png" alt="icone cadeado">
-            </label>
-            <input type="password" id="senha" name="senha" placeholder="Senha">
-           </div>
-        <div>
-            <input type="checkbox" id="criar-conta" name="criar-conta">
-            <label for="criar-conta">Criar uma conta</label>
-            <a href="#">Esqueceu a Senha?</a>
-        </div>        
+        
+        <div class="input-group">
+            <div class="icon-wrapper">
+                <img src="./imagens/person.png" alt="Ícone de pessoa">
+            </div>
+            <input type="text" id="login" name="login" class="input-field" placeholder="Login">
+        </div>
+
+        
+        <div class="input-group">
+            <div class="icon-wrapper">
+                <img src="./imagens/lock.png" alt="Ícone de cadeado">
+            </div>
+            <input type="password" id="senha" name="senha" class="input-field" placeholder="Senha">
+        </div>
+        
+        <div class="form-actions">
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="criar-conta" name="criar-conta">
+                <label for="criar-conta">Criar uma conta</label>
+            </div>
+        
+            <div class="forgot-password-wrapper">
+                <a href="#" class="forgot-password">Esqueceu a senha?</a>
+            </div>
+        </div>
+        
         <button type="submit">LOGIN</button>
       </form>
     </div>

@@ -140,7 +140,10 @@ header nav ul {
 main {
     padding: 20px;
     display: flex;
-    justify-content: center;
+    background-image: url(./imagens/ranking_fundo.png);
+    background-size: cover;
+    height: 400px;
+    
 }
 
 .ranking-container {

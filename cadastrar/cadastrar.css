@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Inicio Definição de variáveis */
+    :root {
+        --marrom_muito_escuro:#332414;
+        --marrom_escuro:#572E0E;
+        --marrom:#74522E;
+        --marrom-claro: #91663A; 
+        --amarelo_queimado: #BA8E4F;
+        --verde_claro: #46B954;
+        --verde: #005301;
+        --verde_escuro: #053105;
+        --verde_dark: #042504;
+        --verde_pantano: #162716;
+        --preto_transparente: #00000030;
+        --cinza:#EFE8E1;
+        --branco: #ffffff
+    }
+/* Fim da definição de variáveis*/
+
+/* Inicio do CSS do header */
+
+header {
+    background-color: var(--preto_transparente);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 0px 20px;
+    height: 132px;
+    width: 100%;
+    top: 0%;
+
+}
+
+.topoHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+
+.logo_header {
+    width: fit-content;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.logo_style {
+    color: var(--branco);
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 54px;
+}
+
+.header_nav  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.ancoras_padrao {
+    color: var(--branco);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.buscar {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100%;
+}
+
+.divisor {
+    border: none;
+    width: 100%;
+    height: 3px;
+    background-color: var(--branco);
+    margin-top: 10px;
+}
+
+/* Fim do CSS do Header */
+/* */
+
+body {
+    background-image: url('./imagensc/background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.formulario {
+    background: var(--marrom_muito_escuro);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    width: 721px;
+    height: 599px;
+    text-align: center;
+}
+
+.icone-central {
+    margin-bottom: 20px;
+}
+
+.icone-central img {
+    width: 149px;
+    height: 149px;
+    border-radius: 50%;
+    background: var(--branco);
+}
+
+.input-group img{
+    width: 63px; 
+    height: 63px; 
+  
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column; /* Label acima do campo */
+    margin-bottom: 15px;
+    gap: 5px; /* Espaço entre label e campo */
+}
+
+label {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--branco);
+    opacity: 90%;
+}
+
+.input-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre ícone e input */
+}
+
+.input-with-icon img {
+    width: 32px; /* Ajuste para o tamanho do ícone */
+    height: 32px;
+}
+
+.input-with-icon input {
+    background: var(--cinza);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    flex: 1;
+    font-size: 16px; /* Tamanho da fonte do input */
+    color: var(--marrom_muito_escuro);
+    outline: none;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adicionando algum espaço entre o formulário e o botão */
+}
+
+button {
+    background-color: var(--marrom);
+    color: var(--branco);
+    border: none;
+    font-size: 20px; /* Tamanho maior do texto */
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 80%;
+    width: 434px;
+    height: 100px; /* Altura do botão */
+    text-align: center;
+    display: flex; /* Usando flexbox para alinhamento */
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: var(--branco);
+    color: var(--marrom_escuro);
+}
