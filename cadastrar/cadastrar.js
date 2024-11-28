@@ -70,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const userData = {
             nome_usuario: nome,
+            email: email,
             senha: senha
         };
 

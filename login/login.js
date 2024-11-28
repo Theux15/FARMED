@@ -56,11 +56,11 @@ document.addEventListener('DOMContentLoaded', () => {
     loginButton.addEventListener('click', (event) => {
         event.preventDefault();
 
-        const login = loginInput.value;
+        const email = loginInput.value;
         const senha = senhaInput.value;
 
         const loginData = {
-            nome_usuario: login,
+            email: email,
             senha: senha
         };
 

@@ -31,7 +31,7 @@ db.connect((err) => {
 
 // Rota de cadastro de usuários
 app.post('/register', (req, res) => {
-    const { nome_usuario, senha } = req.body;
+    const { nome_usuario, email, senha } = req.body;
 
     // Criptografar a senha
     bcrypt.hash(senha, 10, (err, hash) => {
@@ -40,8 +40,8 @@ app.post('/register', (req, res) => {
         }
 
         // Inserir o usuário no banco de dados
-        const query = 'INSERT INTO usuarios (nome_usuario, senha) VALUES (?, ?)';
-        db.query(query, [nome_usuario, hash], (err, result) => {
+        const query = 'INSERT INTO usuarios (nome_usuario, email, senha) VALUES (?, ?, ?)';
+        db.query(query, [nome_usuario, email, hash], (err, result) => {
             if (err) {
                 return res.status(500).json({ error: err });
             }
@@ -52,11 +52,11 @@ app.post('/register', (req, res) => {
 
 // Rota de login de usuários
 app.post('/login', (req, res) => {
-    const { nome_usuario, senha } = req.body;
+    const { email, senha } = req.body;
 
     // Verificar se o usuário existe no banco de dados
-    const query = 'SELECT * FROM usuarios WHERE nome_usuario = ?';
-    db.query(query, [nome_usuario], (err, results) => {
+    const query = 'SELECT * FROM usuarios WHERE email = ?';
+    db.query(query, [email], (err, results) => {
         if (err) {
             return res.status(500).json({ error: err });
         }
