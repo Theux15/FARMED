@@ -54,4 +54,25 @@ document.addEventListener('DOMContentLoaded', () => {
             buscar.classList.remove('lupa-ativa');
         }
     });
+
+    const logoutBtn = document.querySelector('.logout-btn');
+    const authButtons = document.querySelector('.auth-buttons');
+
+    function checkLoginStatus() {
+        const token = localStorage.getItem('token');
+        if (token) {
+            authButtons.style.display = 'none';
+            logoutBtn.style.display = 'block';
+        } else {
+            authButtons.style.display = 'flex';
+            logoutBtn.style.display = 'none';
+        }
+    }
+
+    logoutBtn.addEventListener('click', () => {
+        localStorage.removeItem('token');
+        checkLoginStatus();
+    });
+
+    checkLoginStatus();
 });

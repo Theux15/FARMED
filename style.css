@@ -518,4 +518,24 @@ header nav ul {
 
 /* ...existing code... */
 
+.logout-btn {
+    background-color: var(--marrom);
+    color: var(--branco);
+    border: 2px solid var(--marrom);
+    padding: 8px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: var(--branco);
+    color: var(--marrom);
+}
+
+/* ...existing code... */
+
 

@@ -14,11 +14,11 @@ app.use(cors()); // Adicione esta linha para permitir requisições de outros do
 
 // Configuração da conexão com o banco de dados MySQL
 const db = mysql.createConnection({
-    host: 'localhost',
+    host: 'sql10.freesqldatabase.com',
     port: 3306,
-    user: 'root',
-    password: 'root',
-    database: 'farmed_db'
+    user: 'sql10748412',
+    password: 'mjNujtIggN',
+    database: 'sql10748412'
 });
 
 db.connect((err) => {
