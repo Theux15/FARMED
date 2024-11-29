@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../../Icones/favicon.ico" type="image/x-icon">
-    <script src="./FinalJogos.js" defer></script>
+    <script src="./ranking.js" defer></script>
     <link rel="stylesheet" href="ranking.css">
     <title>FARMED</title>
 </head>
@@ -47,41 +47,23 @@
             <h1>RANKING</h1>
         </div>
 
-        <div class="ranking">
-        <div class="ranking-container">
-            <div class="ranking-header">
-                <div class="header-box posicao">POS.</div>
-                <div class="header-box user">USER</div>
-                <div class="header-box pontos">PONTOS</div>
-            </div>
-
-            <div class="ranking-row">
-                <div class="ranking-box posicao">1°</div>
-                <div class="ranking-box user">Matheus_Soares</div>
-                <div class="ranking-box pontos">10</div>
-            </div>
-            <div class="ranking-row">
-                <div class="ranking-box posicao">2°</div>
-                <div class="ranking-box user">Lara_Lima</div>
-                <div class="ranking-box pontos">10</div>
-            </div>
-            <div class="ranking-row">
-                <div class="ranking-box posicao">3°</div>
-                <div class="ranking-box user">Giovanna_Lopes</div>
-                <div class="ranking-box pontos">9</div>
-            </div>
-            <div class="ranking-row">
-                <div class="ranking-box posicao">4°</div>
-                <div class="ranking-box user">Duda_Moraes</div>
-                <div class="ranking-box pontos">9</div>
-            </div>
-            <div class="ranking-row">
-                <div class="ranking-box posicao">5°</div>
-                <div class="ranking-box user">Arthur_Menocci</div>
-                <div class="ranking-box pontos">8</div>
-            </div>
+        <div class="table-wrap">
+            <table id="rankingTable">
+                <thead>
+                    <tr class="table-title">
+                        <th>POS.</th>
+                        <th class="spacer"></th>
+                        <th class="th-central">USUÁRIO</th>
+                        <th class="spacer"></th>
+                        <th>PONTOS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic content will be inserted here -->
+                </tbody>
+            </table>
         </div>
-        </div>
+        
     </main>
 
 </body>

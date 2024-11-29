@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Função para buscar e atualizar o ranking
     function fetchRankingData() {
-        fetch('http://localhost:3000/ranking1')
+        fetch('http://localhost:3000/ranking2')
             .then(response => response.json())
             .then(newData => {
                 // Verifica se há mudanças comparando com os dados anteriores

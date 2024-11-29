@@ -143,7 +143,7 @@ body {
 form {
     background-color: #013202;
     width: 530px;
-    height: 475px; /* Increased height */
+    height: 485px; /* Increased height */
     padding: 20px;
     margin: 200px auto; /* Increased margin */
     border-radius: 50px;
@@ -475,4 +475,39 @@ form .create-account-wrapper a:hover {
     font-size: 16px;
     outline: none;
 }
+
+/* ...existing code... */
+
+.link_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.esqueceu_senha {
+    color: var(--verde_escuro);
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.criar_conta {
+    color: var(--verde_claro);
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    transition: color 0.3s;
+    margin-right: 30px;
+}
+
+.esqueceu_senha:hover, .criar_conta:hover {
+    color: var(--branco);
+    cursor: pointer;
+}
+
+/* ...existing code... */
 

@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             if (data.message) {
                 alert(data.message);
-                window.location.href = 'login.html';
+                window.location.href = '../index.html';
             } else {
                 alert('Erro ao cadastrar usuário!');
             }

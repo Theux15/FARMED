@@ -61,10 +61,10 @@ header {
 }
 
 .header_nav  {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 header nav ul {
@@ -95,6 +95,52 @@ header nav ul {
     height: 3px;
     background-color: var(--branco);
     margin-top: 10px;
+}
+
+.header_right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.auth-btn {
+    padding: 8px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.login-btn {
+    background-color: transparent;
+    color: var(--branco);
+    border: 2px solid var(--branco);
+}
+
+.login-btn:hover {
+    background-color: var(--branco);
+    color: var(--verde_escuro);
+}
+
+.register-btn {
+    background-color: var(--verde_claro);
+    color: var(--branco);
+    border: 2px solid var(--verde_claro);
+}
+
+.register-btn:hover {
+    background-color: var(--verde_escuro);
+    border-color: var(--verde_escuro);
 }
 
 /* Fim do CSS do Header */
@@ -195,10 +241,24 @@ header nav ul {
     height: 192px;
     width: 381px;
     border-radius: 25px;
-    gap: 20px;
+    gap: 10px;
     padding: 10px;
 }
 
+.ranking-link {
+    background-color: transparent !important;
+    border: none !important;
+    font-size: 16px !important;
+    text-transform: none !important;
+    text-decoration: underline !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 5px !important;
+}
+
+.ranking-link:hover {
+    color: var(--verde_claro) !important;
+}
 
 .jogos a {
     background-color: var(--verde_escuro);
@@ -220,9 +280,10 @@ header nav ul {
 }
 
 .buscar {
-    position: relative;
-    width: 100%;
-    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100%;
 }
 
 

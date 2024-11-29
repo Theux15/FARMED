@@ -126,7 +126,34 @@ function verificarResposta(index) {
 
 function finalizarQuiz() {
     localStorage.setItem('acertos', acertos)
-    window.location.href = "../FinalJogos/FinalJogos.html"
+    const token = localStorage.getItem('token');
+    if (!token) {
+        alert('Você precisa estar logado para salvar sua pontuação.');
+        return;
+    }
+
+    fetch('http://localhost:3000/save-score', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({ pontuacao: acertos, quiz: 1 })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.message) {
+            alert(data.message);
+            localStorage.setItem('quiz', '1');
+            window.location.href = "../FinalJogos/FinalJogos.html";
+        } else {
+            alert('Erro ao salvar pontuação!');
+        }
+    })
+    .catch(error => {
+        console.error('Erro:', error);
+        alert('Erro ao salvar pontuação!');
+    });
 }
 
 window.addEventListener('beforeunload', (event) => {

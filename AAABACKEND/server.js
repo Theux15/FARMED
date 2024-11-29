@@ -29,6 +29,18 @@ db.connect((err) => {
     console.log('Conectado ao banco de dados MySQL');
 });
 
+// Middleware para autenticação
+function authenticateToken(req, res, next) {
+    const token = req.headers['authorization'] && req.headers['authorization'].split(' ')[1];
+    if (!token) return res.sendStatus(401);
+
+    jwt.verify(token, 'seu_segredo_jwt', (err, user) => {
+        if (err) return res.sendStatus(403);
+        req.user = user;
+        next();
+    });
+}
+
 // Rota de cadastro de usuários
 app.post('/register', (req, res) => {
     const { nome_usuario, email, senha } = req.body;
@@ -82,6 +94,54 @@ app.post('/login', (req, res) => {
 
             res.status(200).json({ message: 'Login bem-sucedido!', token });
         });
+    });
+});
+
+// Rota para salvar pontuação do quiz
+app.post('/save-score', authenticateToken, (req, res) => {
+    const { pontuacao, quiz } = req.body;
+    const usuario_id = req.user.id;
+    const table = quiz === 1 ? 'pontuacoes' : 'pontuacoes2';
+
+    const query = `INSERT INTO ${table} (usuario_id, pontuacao) VALUES (?, ?)`;
+    db.query(query, [usuario_id, pontuacao], (err, result) => {
+        if (err) {
+            console.error('Erro ao salvar pontuação:', err);
+            return res.status(500).json({ error: 'Erro ao salvar pontuação' });
+        }
+        res.status(201).json({ message: 'Pontuação salva com sucesso!' });
+    });
+});
+
+// Rota para obter ranking do quiz 1
+app.get('/ranking1', (req, res) => {
+    const query = `
+        SELECT u.nome_usuario, p.pontuacao
+        FROM pontuacoes p
+        JOIN usuarios u ON p.usuario_id = u.id
+        ORDER BY p.pontuacao DESC
+    `;
+    db.query(query, (err, results) => {
+        if (err) {
+            return res.status(500).json({ error: err });
+        }
+        res.status(200).json(results);
+    });
+});
+
+// Rota para obter ranking do quiz 2
+app.get('/ranking2', (req, res) => {
+    const query = `
+        SELECT u.nome_usuario, p.pontuacao
+        FROM pontuacoes2 p
+        JOIN usuarios u ON p.usuario_id = u.id
+        ORDER BY p.pontuacao DESC
+    `;
+    db.query(query, (err, results) => {
+        if (err) {
+            return res.status(500).json({ error: err });
+        }
+        res.status(200).json(results);
     });
 });
 

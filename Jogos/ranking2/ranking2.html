@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../../Icones/favicon.ico" type="image/x-icon">
-    <script src="./FinalJogos.js" defer></script>
-    <link rel="stylesheet" href="FinalJogos.css">
+    <script src="./ranking2.js" defer></script>
+    <link rel="stylesheet" href="ranking2.css">
     <title>FARMED</title>
 </head>
 <body>
@@ -43,44 +43,28 @@
     </header>
 
     <main>
-        <div class="quiz-header">
-            <h1>QUIZ</h1>
+        <div class="ranking-top"> 
+            <h1>RANKING</h1>
         </div>
-    <div class="quiz">
-        <div class="figura">
-            <img src="./imagens/figura.png" alt="figura">
+
+        <div class="table-wrap">
+            <table id="rankingTable">
+                <thead>
+                    <tr class="table-title">
+                        <th>POS.</th>
+                        <th class="spacer"></th>
+                        <th class="th-central">USUÁRIO</th>
+                        <th class="spacer"></th>
+                        <th>PONTOS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic content will be inserted here -->
+                </tbody>
+            </table>
         </div>
-        <div class="pontuacao">
-            <h2>PARABÉNS!</h2>
-            <p>Sua pontuação foi</p>   
-
-            <div class="caixa-de-pontuacao">
-                <h3 class="pontos"></h3>
-            </div>
-
-            <p>pontos</p> 
-
-            <div class="jogar-novamente">
-                <a href="../HomeJogos/Homejogos.html">Jogar novamente</a>
-            </div>
-
-            <div class="ver-ranking">
-                <a href="#">Ver ranking</a>
-            </div>
-        </div>
-    </div>
+        
     </main>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const verRanking = document.querySelector('.ver-ranking a');
-            const quiz = localStorage.getItem('quiz');
 
-            if (quiz === '1') {
-                verRanking.href = '../ranking/ranking.html';
-            } else if (quiz === '2') {
-                verRanking.href = '../ranking2/ranking2.html';
-            }
-        });
-    </script>
 </body>
 </html>

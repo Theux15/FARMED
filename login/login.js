@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (data.token) {
                 localStorage.setItem('token', data.token);
                 alert('Login bem-sucedido!');
-                window.location.href = 'bemvindo.html'; // Redirecionar para a tela de boas-vindas
+                window.location.href = '../index.html';
             } else {
                 alert('Erro ao fazer login!');
             }
