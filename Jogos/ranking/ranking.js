@@ -50,71 +50,76 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Função para buscar e atualizar o ranking
     function fetchRankingData() {
-        fetch('http://localhost:3000/ranking1')
-            .then(response => response.json())
-            .then(newData => {
-                // Verifica se há mudanças comparando com os dados anteriores
-                const currentRanking = document.querySelectorAll('#rankingTable tbody tr');
-                let needsUpdate = false;
+        const token = localStorage.getItem('token');
+        fetch('http://localhost:3000/ranking1', {
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
+        })
+        .then(response => response.json())
+        .then(newData => {
+            // Verifica se há mudanças comparando com os dados anteriores
+            const currentRanking = document.querySelectorAll('#rankingTable tbody tr');
+            let needsUpdate = false;
 
-                if (currentRanking.length !== newData.length) {
-                    needsUpdate = true;
-                } else {
-                    const uniqueUsers = new Set();
-                    newData.forEach((entry, index) => {
-                        if (!uniqueUsers.has(entry.nome_usuario)) {
-                            uniqueUsers.add(entry.nome_usuario);
-                            const currentRow = currentRanking[uniqueUsers.size - 1];
-                            if (currentRow) {
-                                const currentScore = currentRow.lastElementChild.textContent;
-                                if (currentScore !== entry.pontuacao.toString()) {
-                                    needsUpdate = true;
-                                }
+            if (currentRanking.length !== newData.length) {
+                needsUpdate = true;
+            } else {
+                const uniqueUsers = new Set();
+                newData.forEach((entry, index) => {
+                    if (!uniqueUsers.has(entry.nome_usuario)) {
+                        uniqueUsers.add(entry.nome_usuario);
+                        const currentRow = currentRanking[uniqueUsers.size - 1];
+                        if (currentRow) {
+                            const currentScore = currentRow.lastElementChild.textContent;
+                            if (currentScore !== entry.pontuacao.toString()) {
+                                needsUpdate = true;
                             }
                         }
-                    });
-                }
+                    }
+                });
+            }
 
-                // Se houver mudanças, atualiza a tabela
-                if (needsUpdate) {
-                    const rankingTableBody = document.querySelector('#rankingTable tbody');
-                    rankingTableBody.innerHTML = '';
-                    const uniqueUsers = new Set();
-                    newData.forEach((entry, index) => {
-                        if (!uniqueUsers.has(entry.nome_usuario)) {
-                            uniqueUsers.add(entry.nome_usuario);
-                            const row = document.createElement('tr');
+            // Se houver mudanças, atualiza a tabela
+            if (needsUpdate) {
+                const rankingTableBody = document.querySelector('#rankingTable tbody');
+                rankingTableBody.innerHTML = '';
+                const uniqueUsers = new Set();
+                newData.forEach((entry, index) => {
+                    if (!uniqueUsers.has(entry.nome_usuario)) {
+                        uniqueUsers.add(entry.nome_usuario);
+                        const row = document.createElement('tr');
 
-                            const posicaoCell = document.createElement('td');
-                            posicaoCell.textContent = index + 1;
+                        const posicaoCell = document.createElement('td');
+                        posicaoCell.textContent = index + 1;
 
-                            const spacer1 = document.createElement('td');
-                            spacer1.className = 'spacer';
+                        const spacer1 = document.createElement('td');
+                        spacer1.className = 'spacer';
 
-                            const userCell = document.createElement('td');
-                            userCell.textContent = entry.nome_usuario;
-                            userCell.className = 'user-td';
+                        const userCell = document.createElement('td');
+                        userCell.textContent = entry.nome_usuario;
+                        userCell.className = 'user-td';
 
-                            const spacer2 = document.createElement('td');
-                            spacer2.className = 'spacer';
+                        const spacer2 = document.createElement('td');
+                        spacer2.className = 'spacer';
 
-                            const pontosCell = document.createElement('td');
-                            pontosCell.textContent = entry.pontuacao;
+                        const pontosCell = document.createElement('td');
+                        pontosCell.textContent = entry.pontuacao;
 
-                            row.appendChild(posicaoCell);
-                            row.appendChild(spacer1);
-                            row.appendChild(userCell);
-                            row.appendChild(spacer2);
-                            row.appendChild(pontosCell);
+                        row.appendChild(posicaoCell);
+                        row.appendChild(spacer1);
+                        row.appendChild(userCell);
+                        row.appendChild(spacer2);
+                        row.appendChild(pontosCell);
 
-                            rankingTableBody.appendChild(row);
-                        }
-                    });
-                }
-            })
-            .catch(error => {
-                console.error('Erro ao atualizar ranking:', error);
-            });
+                        rankingTableBody.appendChild(row);
+                    }
+                });
+            }
+        })
+        .catch(error => {
+            console.error('Erro ao atualizar ranking:', error);
+        });
     }
 
     // Primeira busca ao carregar a página

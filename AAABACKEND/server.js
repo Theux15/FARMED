@@ -114,7 +114,7 @@ app.post('/save-score', authenticateToken, (req, res) => {
 });
 
 // Rota para obter ranking do quiz 1
-app.get('/ranking1', (req, res) => {
+app.get('/ranking1', authenticateToken, (req, res) => {
     const query = `
         SELECT u.nome_usuario, p.pontuacao
         FROM pontuacoes p
@@ -130,7 +130,7 @@ app.get('/ranking1', (req, res) => {
 });
 
 // Rota para obter ranking do quiz 2
-app.get('/ranking2', (req, res) => {
+app.get('/ranking2', authenticateToken, (req, res) => {
     const query = `
         SELECT u.nome_usuario, p.pontuacao
         FROM pontuacoes2 p
