@@ -132,7 +132,7 @@ function finalizarQuiz() {
         return;
     }
 
-    fetch('http://localhost:3000/save-score', {
+    fetch('https://farmed-backend.vercel.app/save-score', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

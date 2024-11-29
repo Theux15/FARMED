@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Função para buscar e atualizar o ranking
     function fetchRankingData() {
         const token = localStorage.getItem('token');
-        fetch('http://localhost:3000/ranking2', {
+        fetch('https://farmed-backend.vercel.app/ranking2', {
             headers: {
                 'Authorization': `Bearer ${token}`
             }

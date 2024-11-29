@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
             senha: senha
         };
 
-        fetch('http://localhost:3000/login', {
+        fetch('https://farmed-backend.vercel.app/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
