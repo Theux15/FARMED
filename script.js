@@ -1,7 +1,6 @@
 const setaBaixo = document.querySelector('.seta-baixo');
 const destaquesSection = document.querySelector('#destaques');
 
-
 setaBaixo.addEventListener('click', function() {
     destaquesSection.scrollIntoView({ behavior: 'smooth' });
 });

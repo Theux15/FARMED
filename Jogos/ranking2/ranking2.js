@@ -48,6 +48,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    function checkAuthentication() {
+        const token = localStorage.getItem('token');
+        if (!token) {
+            window.location.href = '../../login/login.html';
+        }
+    }
+
+    checkAuthentication();
+
     // Função para buscar e atualizar o ranking
     function fetchRankingData() {
         const token = localStorage.getItem('token');
